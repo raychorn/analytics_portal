@@ -1,0 +1,366 @@
+/*<meta />*/
+
+body
+{
+	background-color: #Dff3ff;
+	leftmargin: 18;
+	font-family: Arial;
+	font-size: 10pt;
+	color: #000000;
+}
+
+a:link
+{
+	color: #336c7d;
+}
+
+a:visited
+{
+	color: #336c7d;
+}
+
+a:hover
+{
+	color: #73acbd;
+}
+
+h1
+{
+	font-weight: bold;
+	font-family: "Trebuchet MS", sans-serif;
+	letter-spacing: -0.1pt;
+	font-size: 14pt;
+	color: #235c6d;
+}
+
+li.h1
+{
+	font-weight: bold;
+	font-family: "Trebuchet MS", sans-serif;
+	letter-spacing: -0.1pt;
+	font-size: 14pt;
+	color: #235c6d;
+}
+
+h2
+{
+	font-weight: bold;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-bottom: 0pt;
+	letter-spacing: -0.1pt;
+	margin-top: 16pt;
+	font-size: 12pt;
+	color: #000000;
+}
+
+li.h2
+{
+	font-weight: bold;
+	font-family: "Trebuchet MS", sans-serif;
+	letter-spacing: -0.1pt;
+	font-size: 12pt;
+	color: #000000;
+}
+
+h3
+{
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Arial;
+}
+
+li.h3
+{
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Arial;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+	margin-bottom: 0pt;
+}
+
+li.h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+li.h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+li.h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+li.p
+{
+	font-size: 12.0pt;
+}
+
+a.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+span.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+a.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+span.glosstext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p.body
+{
+	margin-top: 4pt;
+	margin-bottom: 12pt;
+	line-height: 120%;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+li.P-body
+{
+	line-height: 120%;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+p.Bullet
+{
+	margin-bottom: 6pt;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 4pt;
+}
+
+li.P-Bullet
+{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+p.Cell
+{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+li.P-Cell
+{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+p.bodypic
+{
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+li.P-bodypic
+{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+span.itemname
+{
+	color: #235c6d;
+	font-weight: normal;
+	font-style: normal;
+}
+
+p.Number
+{
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 4pt;
+	margin-bottom: 12pt;
+	line-height: 120%;
+	list-style: decimal;
+}
+
+li.P-Number
+{
+	font-family: "Trebuchet MS", sans-serif;
+	line-height: 120%;
+	list-style: decimal;
+}
+
+p.indpic
+{
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+}
+
+li.p-indpic
+{
+	
+}
+
+p.Indent
+{
+	margin-top: 4pt;
+	margin-bottom: 12pt;
+	line-height: Normal;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-left: 40px;
+}
+
+li.P-Indent
+{
+	line-height: Normal;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+p.Box
+{
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 4pt;
+	margin-bottom: 12pt;
+}
+
+li.P-Box
+{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+li.P-Style1
+{
+	
+}
+
+p.BulletIndent
+{
+	margin-bottom: 6pt;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 4pt;
+	margin-left: 40px;
+	list-style: disc;
+}
+
+li.P-BulletIndent
+{
+	font-family: "Trebuchet MS", sans-serif;
+	list-style: disc;
+}
+
+p.Letter
+{
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 4pt;
+	line-height: 120%;
+	list-style: lower-alpha;
+	margin-left: 40px;
+	margin-bottom: 8pt;
+}
+
+li.P-Letter
+{
+	font-family: "Trebuchet MS", sans-serif;
+	line-height: 120%;
+	list-style: lower-alpha;
+}
+
+MadCap|expandingHead.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|dropDownHotspot.dropspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.glossterm
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+@media print
+{
+	body
+	{
+		background-color: #cff0ff;
+	}
+}
+

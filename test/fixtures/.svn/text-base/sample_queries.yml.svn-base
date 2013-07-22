@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+error_management:
+  id: -1
+  query_string: SELECT "sample query 1" ...
+  store_in_db: false
+  query_result:
+    latest_data_results:
+    - data: "[12, 42, 23, 0, 10, 0, 40, 10, 8, 7, 4, 14]"

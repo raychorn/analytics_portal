@@ -1,0 +1,7 @@
+<div class="dialog filter-param-dialog">
+
+  <h1>New Date Filter Param</h1>
+
+  <%= render 'date_filter_params/form' %>
+
+</div>

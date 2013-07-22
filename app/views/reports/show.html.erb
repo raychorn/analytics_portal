@@ -1,0 +1,21 @@
+<div id="content-main">
+
+  <%= render :partial => 'content_banner' %>
+  <div id="sidebar">
+    <%= render :partial => 'reports_nav' %>
+  </div>
+
+  <div id="content-wrapper">
+    <div id="content-body" class="full-report">
+      <div id="report_<%= @report.id %>">
+        <%= render_report @report, :partial => 'display_data', :locals => {:report => @report} %>
+      </div>
+
+      <% if is_global_admin?(current_user) %>
+        <%= render :partial => 'debug_info' %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</div>

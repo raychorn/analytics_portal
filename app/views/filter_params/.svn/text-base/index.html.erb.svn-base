@@ -1,0 +1,27 @@
+<h1>Listing filter_params</h1>
+
+<table>
+  <tr>
+    <th>Report</th>
+    <th>Filter param type</th>
+    <th>Column</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @filter_params.each do |filter_param| %>
+  <tr>
+    <td><%= filter_param.report_id %></td>
+    <td><%= filter_param.filter_param_type %></td>
+    <td><%= filter_param.column %></td>
+    <td><%= link_to 'Show', filter_param %></td>
+    <td><%= link_to 'Edit', edit_filter_param_path(filter_param) %></td>
+    <td><%= link_to 'Destroy', filter_param, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Filter param', new_filter_param_path %>

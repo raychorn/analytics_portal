@@ -1,0 +1,18 @@
+<%= simple_form_for @user do |form| %>
+  <div class="dialog-content">
+    <div class="col-1">
+      <h2>User Info</h2>
+      <%= form.input :first_name %>
+      <%= form.input :last_name %>
+      <%= form.input :email %>
+    </div>
+    <div class="col-2">
+      <h2>Roles</h2>
+      <%= form.association :roles, :as => :check_boxes, :collection => Role.order('name ASC'), :label => false %>
+    </div>
+  </div>
+  <%- @user.new_record? ? dialog_info = 'an invitation email will be sent when you click "Save"' :
+              dialog_info = nil %>
+  <%= render :partial => 'shared/dialog_footer',
+             :locals => { :form => form, :cancel_path => users_path, :dialog_info => dialog_info } %>
+<% end %>

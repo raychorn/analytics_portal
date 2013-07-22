@@ -1,0 +1,29 @@
+<h1>Listing report_links</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Report</th>
+    <th>Linked report</th>
+    <th>Filter columns</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @report_links.each do |report_link| %>
+  <tr>
+    <td><%= report_link.name %></td>
+    <td><%= report_link.report_id %></td>
+    <td><%= report_link.linked_report_id %></td>
+    <td><%= report_link.filter_columns %></td>
+    <td><%= link_to 'Show', report_link %></td>
+    <td><%= link_to 'Edit', edit_report_link_path(report_link) %></td>
+    <td><%= link_to 'Destroy', report_link, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Report link', new_report_link_path %>

@@ -1,0 +1,14 @@
+<%-# objects_sym required %>
+<%- objects_string = objects_sym.to_s %>
+
+<%= form_tag url_for(objects_sym), :method => 'get', :id => "#{objects_string}_search", :class => 'search-form' do %>
+  <%= hidden_field_tag :direction, params[:direction] %>
+  <%= hidden_field_tag :sort, params[:sort] %>
+
+  <span class="search-left-bg"></span>
+  <span class="search-icon"></span>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Go", :name => nil, :class => 'submit-button' %>
+  <%= link_to '', {:controller => objects_string, :direction => params[:direction], :sort => params[:sort] },
+              { :class => 'clear-button', :title => 'Clear' } %>
+<% end %>

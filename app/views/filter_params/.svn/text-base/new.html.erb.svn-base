@@ -1,0 +1,24 @@
+<div class="dialog filter-param-dialog">
+  <h1>Select a Filter Param Type</h1>
+
+  <div class="dialog-content">
+    <div class="col-a">
+      <%= link_to 'Check Boxes Filter Param', new_check_boxes_filter_param_path %>
+      <br/>
+      <%= link_to 'Date Filter Param', new_date_filter_param_path %>
+      <br/>
+      <%= link_to 'KPI Filter Param', new_kpi_filter_param_path %>
+      <br/>
+      <%= link_to 'Map Filter Param', new_map_filter_param_path %>
+      <br/>
+      <%= link_to 'Select Filter Param', new_select_filter_param_path %>
+      <br/>
+    </div>
+
+    <%= render :partial => 'shared/dialog_footer', :locals => {
+            :form => nil, :cancel_path => filter_params_path} %>
+
+  </div>
+  <div class="clear"></div>
+
+</div>

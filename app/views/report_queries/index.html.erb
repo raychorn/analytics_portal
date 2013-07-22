@@ -1,0 +1,41 @@
+<h1>Listing report_queries</h1>
+
+<table>
+  <tr>
+    <th>Report</th>
+    <th>Query</th>
+    <th>Chart type</th>
+    <th>Chart params</th>
+    <th>X column</th>
+    <th>Y column</th>
+    <th>Radius column</th>
+    <th>Name column</th>
+    <th>Query select group</th>
+    <th>Sql string</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @report_queries.each do |report_query| %>
+  <tr>
+    <td><%= report_query.report_id %></td>
+    <td><%= report_query.query_id %></td>
+    <td><%= report_query.chart_type %></td>
+    <td><%= report_query.chart_params %></td>
+    <td><%= report_query.x_column %></td>
+    <td><%= report_query.y_column %></td>
+    <td><%= report_query.radius_column %></td>
+    <td><%= report_query.name_column %></td>
+    <td><%= report_query.query_select_group %></td>
+    <td><%= report_query.sql_string %></td>
+    <td><%= link_to 'Show', report_query %></td>
+    <td><%= link_to 'Edit', edit_report_query_path(report_query) %></td>
+    <td><%= link_to 'Destroy', report_query, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Report query', new_report_query_path %>

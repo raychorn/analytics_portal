@@ -1,0 +1,31 @@
+<h1>Listing filter_prefs</h1>
+
+<table>
+  <tr>
+    <th>Filter param</th>
+    <th>Optionable</th>
+    <th>Optionable type</th>
+    <th>Filter param type</th>
+    <th>Values</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @filter_prefs.each do |filter_pref| %>
+  <tr>
+    <td><%= filter_pref.filter_param_id %></td>
+    <td><%= filter_pref.optionable_id %></td>
+    <td><%= filter_pref.optionable_type %></td>
+    <td><%= filter_pref.filter_param_type %></td>
+    <td><%= filter_pref.values %></td>
+    <td><%= link_to 'Show', filter_pref %></td>
+    <td><%= link_to 'Edit', edit_filter_pref_path(filter_pref) %></td>
+    <td><%= link_to 'Destroy', filter_pref, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Filter pref', new_filter_pref_path %>

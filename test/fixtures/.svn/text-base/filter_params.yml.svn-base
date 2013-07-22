@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  report_id: 1
+  filter_param_type: MyString
+  column: MyString
+
+two:
+  report_id: 1
+  filter_param_type: MyString
+  column: MyString

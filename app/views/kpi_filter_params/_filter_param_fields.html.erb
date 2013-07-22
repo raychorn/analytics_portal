@@ -1,0 +1,20 @@
+<div class="nested-fields">
+  <%= f.input :filter_param_type, :as => :hidden %>
+
+  <h4>General</h4>
+
+  <%= f.input :column %>
+
+  <% if !report.nil? %>
+    <h4>KPI</h4>
+    <%= f.input :default_name %>
+    <%= f.input :date_column %>
+    <div class="input select">
+      <%= f.association :report_query, :as => :select, :collection => report.report_queries %>
+      <%= f.label 'interval', 'Interval' %>
+      <%= f.collection_select :interval, f.object.options_for_interval, :first, :last %>
+    </div>
+
+    <%= link_to_remove_association "remove filter param", f %>
+  <% end %>
+</div>

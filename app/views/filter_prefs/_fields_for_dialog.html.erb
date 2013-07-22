@@ -1,0 +1,53 @@
+<%- # requires :form %>
+<%- object = form.object %>
+
+<div class="col-1">
+  <%= form.simple_fields_for :filter_prefs do |filter_pref| %>
+    <% if filter_pref.object.filter_param.is_a?(DateFilterParam) || filter_pref.object.filter_param.is_a?(MapFilterParam) %>
+     <%= render 'filter_prefs/single_filter_pref_fields', :f => filter_pref %>
+    <% end %>
+  <% end %>
+</div>
+<div class="col-2">
+  <%= form.simple_fields_for :filter_prefs do |filter_pref| %>
+    <% if filter_pref.object.filter_param.is_a? SelectFilterParam %>
+      <%= render 'filter_prefs/single_filter_pref_fields', :f => filter_pref %>
+    <% end %>
+  <% end %>
+</div>
+<div class="clear"></div>
+<div class="col-3">
+  <%= form.simple_fields_for :filter_prefs do |filter_pref| %>
+    <% if filter_pref.object.filter_param.is_a? CheckBoxesFilterParam %>
+      <%= render 'filter_prefs/single_filter_pref_fields', :f => filter_pref %>
+    <% end %>
+  <% end %>
+
+  <%- # for KPI preferences %>
+  <%
+    if (
+      object.instance_of?(DashboardReport) && object.report.instance_of?(KpiReport) ||
+      object.instance_of?(KpiReport)
+    )
+  %>
+    <div id="filter_prefs" class="dev">
+      <%= form.simple_fields_for :filter_prefs do |filter_pref| %>
+        <% if filter_pref.object.filter_param.is_a? KpiFilterParam %>
+          <%= render 'filter_prefs/kpi_pref_fields', :f => filter_pref %>
+        <% end %>
+      <% end %>
+      <div class="links">
+        <%= link_to_add_association 'Add New KPI', form, :filter_prefs %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    smap.initDatePickers();
+    smap.initCheckBoxFilters();
+  });
+</script>

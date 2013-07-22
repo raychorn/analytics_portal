@@ -1,0 +1,5 @@
+<div class="nested-fields">
+  <%= f.association :filter_param, :as => :select, :collection => @report.filter_params %>
+  <%= f.input :values %>
+  <%= link_to_remove_association "remove filter pref", f %>
+</div>

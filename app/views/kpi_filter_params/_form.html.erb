@@ -1,0 +1,9 @@
+<%= simple_form_for @filter_param do |form| %>
+  <div class="dialog-content">
+    <div class="col-a">
+      <%= render :partial => 'kpi_filter_params/filter_param_fields', :locals => {:f => form, :report => @report} %>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <%= render :partial => 'shared/dialog_footer', :locals => {:form => form, :cancel_path => filter_params_path} %>
+<% end %>

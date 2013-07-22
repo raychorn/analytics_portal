@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/users
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/users/_new.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/users/_form.html.erb
+END
+_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/users/_edit.html.erb
+END

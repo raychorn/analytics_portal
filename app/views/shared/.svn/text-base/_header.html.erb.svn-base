@@ -1,0 +1,54 @@
+<div id="header">
+
+  <a href="<%= default_dashboard_path %>" id="smithmicro-logo-main" title="Smith Micro Analytics"></a>
+
+  <div class="main-nav">
+    <% if current_user %>
+
+      <%- tab_classes = [Dashboard, User, Role, Configuration].select { |c| can? :read, c } %>
+
+      <%= tabs_tag :builder => ClickableTabsBuilder, :open_tabs => {:class => 'nav-items'} do |tab| %>
+        <% if can? :read, Dashboard %>
+          <%= tab.analytics 'Analytics', default_dashboard_path, :class => last_tab_class(Dashboard, tab_classes) %>
+        <% end %>
+        <% if can? :read, User %>
+          <%= tab.users 'Users', users_path, :class => last_tab_class(User, tab_classes) %>
+        <% end %>
+        <% if can? :read, Role %>
+          <%= tab.roles 'Roles', roles_path, :class => last_tab_class(Role, tab_classes) %>
+        <% end %>
+        <% if can? :read, Configuration %>
+          <%= tab.configuration 'Config', configuration_path, :class => last_tab_class(Configuration, tab_classes) %>
+        <% end %>
+      <% end %>
+
+    <% end %>
+  </div>
+
+  <% if current_user %>
+    <ul class="root-nav">
+      <li class="customer-name"><%= Configuration.instance.name %></li>
+      <li class="logged-in">Logged in as:
+        <br/> <%= link_to "#{current_user.first_name} #{current_user.last_name}", account_path %>
+      </li> |
+      <li><%= link_to "Log Out", destroy_user_session_path %></li> |
+      <li><%= link_to "Help", contextual_help_path, :target => '_blank' %></li>
+    </ul>
+  <% end %>
+  <div class="clear"></div>
+
+  <% if current_user %>
+    <%= render :partial => 'shared/sub_nav', :locals => {:sub_nav_group => @sub_nav_group} %>
+  <% end %>
+
+  <% if notice.present? %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+  <% if !current_user && notice.blank? && alert.blank? %>
+    <p class="no-message">&nbsp;</p>
+  <% end %>
+
+</div>

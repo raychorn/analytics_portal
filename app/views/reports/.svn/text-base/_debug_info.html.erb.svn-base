@@ -1,0 +1,12 @@
+<div class="debug">
+  <b>Queries</b>
+  <ul>
+    <% @report.report_queries.each do |report_query| %>
+      <%- q = report_query.query %>
+      <li><%= link_to "#{q.name} - (rq-#{report_query.id})", 'http://analytics-admin:3001' + QueryResult.element_path(
+              (q.query_result_id || q.id), :sample_option => @report.sample_option,
+              :sql_string => report_query.sql_string)
+      %></li>
+    <% end %>
+  </ul>
+</div>

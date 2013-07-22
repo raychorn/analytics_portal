@@ -1,0 +1,2 @@
+module DashboardReportsHelper
+end

@@ -1,0 +1,7 @@
+<div class="dialog filter-param-dialog">
+
+  <h1>New KPI Boxes Param</h1>
+
+  <%= render 'kpi_filter_params/form' %>
+
+</div>

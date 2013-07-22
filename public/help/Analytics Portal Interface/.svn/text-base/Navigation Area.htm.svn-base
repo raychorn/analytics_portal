@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="907" MadCap:lastWidth="912" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Analytics Portal Interface" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Analytics_portal_help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Navigation Area</title>
+        <link href="../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Navigation Area</h1>
+        <p class="body">The Navigation area contains links to the other functions of the <span class="PrimaryApplication Name">Analytics Portal</span>. </p>
+        <p class="bodypic">
+            <img src="../Resources/Images/Navigation_Area.png" />
+        </p>
+        <p class="body">The navigation area is divided into three sections:</p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Primary Navigation Bar</span> — The list of links at the top of the Navigation Area are global links. The links displayed to each user in this navigation bar depend on the user's Role. For more information on roles, see <a href="../Administration/Roles.htm" target="" title="" alt="" class="MCXref_0" xrefformat="{paratext}">Roles Screen</a>. Depending on your role, the following links may appear on the Primary Navigation Bar:</p>
+        <p class="BulletIndent" MadCap:conditions="Primary.Online" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Analytics</span> — Select this link to access the <a href="Dashboard/Dashboard_Screen.htm">Dashboard</a>, <a href="Reports/Reports_Screen.htm">Reports</a>, and <a href="Data Segments/Data_Segments_Screen.htm">Data Segments</a> screens.</p>
+        <p class="BulletIndent" MadCap:conditions="Primary.Online" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Users</span> — Select this link to access the <a href="../Administration/Users.htm">Users</a> screen. </p>
+        <p class="BulletIndent" MadCap:conditions="Primary.Online" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Roles</span> — Select this link to access the <a href="../Administration/Roles.htm">Roles</a> screen.</p>
+        <p class="BulletIndent" MadCap:conditions="Primary.Online" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Config</span> — Select this link to access the <a href="../Administration/Config.htm">Configuration</a> screen.</p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Secondary Navigation Bar</span> — This list of links appears below the Primary Navigation bar. The links listed in this area depend on what is selected in the Primary Navigation Bar.</p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Tool Bar</span> — The Tool Bar contains three links:</p>
+        <p class="BulletIndent" MadCap:conditions="Primary.Online" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Username</span> — Click on your name to access the <a href="../Administration/My Account.htm">My Account</a> screen.</p>
+        <p class="BulletIndent" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Log Out</span> — Select this link to log out of the <span class="PrimaryApplication Name">Analytics Portal</span>.</p>
+        <p class="BulletIndent" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span><span class="itemname">Help</span> — Select this link to access the online help system.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

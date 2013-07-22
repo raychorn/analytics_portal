@@ -1,0 +1,14 @@
+<%= simple_form_for(@report_link) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :report_id %>
+    <%= f.input :linked_report_id %>
+    <%= f.input :filter_columns %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

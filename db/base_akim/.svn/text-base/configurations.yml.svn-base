@@ -1,0 +1,19 @@
+
+--- 
+configurations: 
+  columns: 
+  - id
+  - name
+  - locale
+  - time_zone
+  - created_at
+  - updated_at
+  - default_dashboard_id
+  records: 
+  - - 1
+    - Smith Micro Telecom
+    - en
+    - ""
+    - 2011-05-27 00:51:59 Z
+    - 2011-06-28 20:27:11 Z
+    - 1

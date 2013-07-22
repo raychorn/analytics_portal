@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  filter_param_id: 1
+  optionable_id: 1
+  optionable_type: MyString
+  filter_param_type: MyString
+  values: MyText
+
+two:
+  filter_param_id: 1
+  optionable_id: 1
+  optionable_type: MyString
+  filter_param_type: MyString
+  values: MyText

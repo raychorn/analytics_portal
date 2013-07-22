@@ -1,0 +1,15 @@
+<%= simple_form_for @configuration, :url => configuration_path do |form| %>
+  <div class="dialog-content">
+    <div class="col-a">
+      <%= form.input :name %>
+      <%= form.input :locale, :as => :select, :collection => [['English', 'en']] %>
+      <%= form.input :time_zone %>
+      <div class="input select">
+        <%= form.label :configuration_default_dashboard_id, 'Default Dashboard' %>
+        <%= form.collection_select :default_dashboard_id, @readable_dashboards, :first, :last %>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <%= render :partial => 'shared/dialog_footer', :locals => { :form => form, :cancel_path => configuration_path } %>
+<% end %>

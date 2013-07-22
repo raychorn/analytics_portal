@@ -1,0 +1,14 @@
+<div class="nested-fields">
+  <%= f.input :filter_param_type, :as => :hidden %>
+
+  <%= f.input :column %>
+  <%= f.input :enable_for_filter_sets %>
+
+  <%= f.input :enable_dynamic_values %>
+  <%= f.association :dynamic_values_query, :as => :select, :collection => Query.stored_in_db %>
+  <%= f.input :values, :input_html => { :rows => 5 }, :label => '(Static) values', :hint => '(JSON array)' %>
+
+  <% if !report.nil? %>
+    <%= link_to_remove_association "remove filter param", f %>
+  <% end %>
+</div>

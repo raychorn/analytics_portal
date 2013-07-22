@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Filter param:</b>
+  <%= @filter_pref.filter_param_id %>
+</p>
+
+<p>
+  <b>Optionable:</b>
+  <%= @filter_pref.optionable_id %>
+</p>
+
+<p>
+  <b>Optionable type:</b>
+  <%= @filter_pref.optionable_type %>
+</p>
+
+<p>
+  <b>Values:</b>
+  <%= @filter_pref.values %>
+</p>
+
+
+<%= link_to 'Edit', edit_filter_pref_path(@filter_pref) %> |
+<%= link_to 'Back', filter_prefs_path %>

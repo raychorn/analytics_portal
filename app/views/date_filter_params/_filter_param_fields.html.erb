@@ -1,0 +1,19 @@
+<div class="nested-fields">
+  <%= f.input :filter_param_type, :as => :hidden %>
+
+  <%= f.input :column %>
+  <%= f.input :enable_for_filter_sets %>
+
+  <div class="input select">
+    <%= f.label 'default_period', 'Default Period' %>
+    <%= f.collection_select :default_period, f.object.options_for_default_period, :first, :last %>
+  </div>
+  <div class="input select">
+    <%= f.label 'min_period', 'Minimum Period' %>
+    <%= f.collection_select :min_period, f.object.options_for_min_period, :first, :last %>
+  </div>
+
+  <% if !report.nil? %>
+    <%= link_to_remove_association "remove filter param", f %>
+  <% end %>
+</div>

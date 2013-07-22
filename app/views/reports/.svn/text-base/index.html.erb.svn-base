@@ -1,0 +1,9 @@
+<div id="content-main">
+
+  <%= render :partial => 'content_banner' %>
+  <div id="sidebar">
+    <%= render :partial => 'reports_nav' %>
+  </div>
+
+  <div class="clear"></div>
+</div>

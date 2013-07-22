@@ -1,0 +1,31 @@
+<div class="spacer">
+  <% if is_global_admin?(current_user) %>
+    <%= link_to "new report", new_report_path %>
+  <% end %>
+</div>
+
+<ul id="tree">
+  <% Report.tag_counts.each do |tag| %>
+    <li id="tag_<%= tag.id %>">
+      <span class="folder"><%= tag.name %></span>
+
+      <ul>
+        <% Report.tagged_with(tag).order('name ASC').each do |report| %>
+          <li class="file<%= @displayed_reports.try(:include?, report) ? ' active-file' : '' %>">
+            <%= link_to report.name, report %>
+            <% if @displayed_reports.try(:include?, report) %>
+              <span>&gt;</span>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+
+    </li>
+  <% end %>
+</ul>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    smap.initTree();
+  });
+</script>

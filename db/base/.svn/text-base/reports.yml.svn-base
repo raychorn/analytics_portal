@@ -1,0 +1,456 @@
+
+--- 
+reports: 
+  columns: 
+  - id
+  - name
+  - created_at
+  - updated_at
+  - highcharts_params
+  - type
+  - table_columns
+  - sample_option
+  - filter_set_id
+  records: 
+  - - 1
+    - Weekly Usage Trend
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-27 23:48:31 Z
+    - |-
+      {
+          "chart": {
+              "zoomType": "xy"
+          },
+          "xAxis": {
+              "categories": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+              ]
+          },
+          "yAxis": [
+              {
+                  "title": {
+                      "text": "Connections / Day",
+                      "style": {
+                          "color": "#21415E"
+                      }
+                  }
+              },
+              {
+                  "title": {
+                      "text": "Average Data Uploaded and Downloaded",
+                      "style": {
+                          "color": "#8DAF17"
+                      }
+                  },
+                  "opposite": true
+              },
+              {
+                  "title": {
+                      "text": "Failure Rate (%)",
+                      "style": {
+                          "color": "red"
+                      }
+                  },
+                  "opposite": true
+              }
+          ],
+          "plotOptions": {
+              "area": {
+                  "stacking": "normal",
+                  "lineColor": "#666666",
+                  "lineWidth": 1,
+                  "marker": {
+                      "lineWidth": 1,
+                      "lineColor": "#666666"
+                  }
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 2
+    - Error Scatterplot
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-28 21:54:38 Z
+    - |-
+      {
+          "chart": {
+              "zoomType": "xy"
+          },
+          "xAxis": {
+              "title": {
+                "text": "Frequency/hr",
+                "min": 0
+              }
+          },
+          "yAxis": {
+              "title": {
+                  "text": "% Users Affected",
+                  "min": 0,
+                  "max": 100,
+                  "tickInterval": 10
+              }
+          },
+          "plotOptions": {
+              "scatter": {
+                  "marker": {
+                      "radius": "5",
+                      "states": {
+                          "hover": {
+                              "enabled": "true",
+                              "lineColor": "rgb(250,250,100)"
+                          }
+                      }
+                  },
+                  "states": {
+                      "hover": {
+                          "marker": {
+                              "enabled": "false"
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 3
+    - Usage Trend
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:38:35 Z
+    - |-
+      {
+          "chart": {
+              "zoomType": "xy"
+          },
+          "xAxis": {
+              "type": "datetime",
+              "tickInterval": 2592000000
+          },
+          "yAxis": [
+              {
+                  "title": {
+                      "text": "Connections / Day",
+                      "style": {
+                          "color": "#21415E"
+                      }
+                  }
+              },
+              {
+                  "title": {
+                      "text": "Average Data Uploaded and Downloaded",
+                      "style": {
+                          "color": "#8DAF17"
+                      }
+                  },
+                  "opposite": true
+              },
+              {
+                  "title": {
+                      "text": "Failure Rate (%)",
+                      "style": {
+                          "color": "red"
+                      }
+                  },
+                  "opposite": true
+              }
+          ],
+          "plotOptions": {
+              "area": {
+                  "stacking": "normal",
+                  "lineColor": "#666666",
+                  "lineWidth": 1,
+                  "marker": {
+                      "lineWidth": 1,
+                      "lineColor": "#666666"
+                  }
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 4
+    - Data by Technology
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:32:47 Z
+    - |-
+      {
+          "chart": {
+              "defaultSeriesType": "area"
+          },
+          "xAxis": {
+              "type": "datetime",
+              "tickInterval": 2592000000
+          },
+          "yAxis": {
+              "title": {
+                  "text": "Average Data Uploaded and Downloaded"
+              }
+          },
+          "plotOptions": {
+              "area": {
+                  "stacking": "normal",
+                  "lineColor": "#666666",
+                  "lineWidth": 1,
+                  "marker": {
+                      "lineWidth": 1,
+                      "lineColor": "#666666"
+                  }
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 5
+    - Daily Usage Trend
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-28 16:45:45 Z
+    - |-
+      {
+          "chart": {
+              "zoomType": "xy"
+          },
+          "xAxis": {
+              "type": "datetime",
+              "tickInterval": 10800000,
+              "dateTimeLabelFormats": {
+                  "day": "%H:%M"
+              }
+          },
+          "yAxis": [
+              {
+                  "title": {
+                      "text": "Connections / Hour",
+                      "style": {
+                          "color": "#21415E"
+                      }
+                  }
+              },
+              {
+                  "title": {
+                      "text": "Average Data Uploaded and Downloaded",
+                      "style": {
+                          "color": "#8DAF17"
+                      }
+                  },
+                  "opposite": true
+              },
+              {
+                  "title": {
+                      "text": "Failure Rate (%)",
+                      "style": {
+                          "color": "red"
+                      }
+                  },
+                  "opposite": true
+              }
+          ],
+          "plotOptions": {
+              "line": {
+                  "zIndex": 1
+              },
+              "area": {
+                  "zIndex": 0,
+                  "stacking": "normal",
+                  "lineColor": "#666666",
+                  "lineWidth": 1,
+                  "marker": {
+                      "lineWidth": 1,
+                      "lineColor": "#666666"
+                  }
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 6
+    - Licensing Report
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-06 22:17:41 Z
+    - |-
+      {
+          "chart": {
+              "zoomType": "xy"
+          },
+          "xAxis": {
+              "type": "datetime",
+              "tickInterval": 2592000000
+          },
+          "yAxis": {
+              "title": {
+                  "text": "Total Number of Customers"
+              }
+          },
+          "credits": {
+              "enabled": false
+          },
+          "plotOptions": {
+              "column": {
+                  "stacking": "normal"
+              }
+          }
+      }
+    - ChartReport
+    - 
+    - 4
+    - 
+  - - 7
+    - Device Usage Pie Chart
+    - 2011-05-27 00:51:12 Z
+    - 2011-05-29 00:57:45 Z
+    - "{\"chart\":{\"plotShadow\":\"false\"},\"title\":{\"text\":\"Device usage over past week\"},\"plotOptions\":{\"allowPointSelect\":\"true\",\"cursor\":\"pointer\"}}"
+    - ChartReport
+    - 
+    - 0
+    - 
+  - - 8
+    - Error Report
+    - 2011-05-27 00:51:12 Z
+    - 2011-05-29 06:25:57 Z
+    - 
+    - TableReport
+    - error_code, error_msg, connection_type, percent_user_affected, frequency_per_hour, total_cnt_error
+    - 0
+    - 
+  - - 9
+    - Technology Performance Report
+    - 2011-05-28 07:01:42 Z
+    - 2011-05-28 07:55:05 Z
+    - 
+    - TableReport
+    - connection_type, conn_per_day, failed_conn_per_day, dropped_per_day, avg_time_conn_per_day, avg_time_conn_per_session, avg_downloaded_per_day, avg_uploaded_per_day, avg_download_speed, avg_upload_speed, avg_signal_strength
+    - 0
+    - 
+  - - 10
+    - Technology Performance Summary
+    - 2011-05-28 21:19:00 Z
+    - 2011-05-28 23:23:19 Z
+    - 
+    - TableReport
+    - connection_type, conn_per_day, throughput_per_day, avg_download_speed, avg_signal_strength
+    - 0
+    - 
+  - - 11
+    - Device Usage Report
+    - 2011-05-29 02:55:52 Z
+    - 2011-07-21 00:37:13 Z
+    - 
+    - TableReport
+    - manufacturer, device_model, user_share, sum_users, avg_conn_time_per_day,  avg_data_upload_per_day,  avg_data_download_per_day, avg_peak_download_speed, avg_peak_upload_speed
+    - 0
+    - 
+  - - 13
+    - Device Usage Summary
+    - 2011-05-29 03:06:48 Z
+    - 2011-07-21 00:37:45 Z
+    - 
+    - TableReport
+    - manufacturer, device_model, user_share, avg_time_conn_per_day, avg_throughput_per_day
+    - 1
+    - 
+  - - 14
+    - Error Summary
+    - 2011-05-29 06:40:57 Z
+    - 2011-05-29 06:40:57 Z
+    - 
+    - TableReport
+    - error_code, error_msg, percent_user_affected, frequency_per_hour
+    - 0
+    - 
+  - - 15
+    - Total Connections Heat Map
+    - 2011-06-07 20:36:54 Z
+    - 2011-07-06 21:00:16 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, sum_conn_attempts
+    - 3
+    - 
+  - - 16
+    - KPI Report
+    - 2011-06-13 23:50:13 Z
+    - 2011-06-14 00:56:50 Z
+    - 
+    - KpiReport
+    - kpi, actual, target
+    - 0
+    - 
+  - - 17
+    - Connections per Day Heat Map
+    - 2011-07-06 21:20:13 Z
+    - 2011-07-06 21:20:13 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, connections
+    - 3
+    - 
+  - - 18
+    - "Total Throughput Heat Map "
+    - 2011-07-06 22:31:02 Z
+    - 2011-07-06 22:40:52 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, throughput
+    - 3
+    - 
+  - - 19
+    - Throughput per Day Heat Map
+    - 2011-07-06 22:45:54 Z
+    - 2011-07-06 22:49:24 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, throughput
+    - 3
+    - 
+  - - 20
+    - Average Signal Strength Heat Map
+    - 2011-07-06 22:54:18 Z
+    - 2011-07-06 22:54:18 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, signal_strength
+    - 3
+    - 
+  - - 21
+    - Average Peak Download Speed Heat Map
+    - 2011-07-06 22:58:38 Z
+    - 2011-07-06 22:58:38 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, peak_speed
+    - 3
+    - 
+  - - 22
+    - Error Frequency Heat Map
+    - 2011-07-06 23:03:27 Z
+    - 2011-07-06 23:03:27 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, error_freq
+    - 3
+    - 
+  - - 23
+    - Connection Failure Rate Heat Map
+    - 2011-07-06 23:07:20 Z
+    - 2011-07-06 23:07:20 Z
+    - 
+    - HeatMapReport
+    - heat_lat, heat_lng, heat_x, heat_y, heat_num, num_failures
+    - 3
+    - 

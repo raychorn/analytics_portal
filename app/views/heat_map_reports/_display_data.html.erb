@@ -1,0 +1,68 @@
+<%- # required: report   %>
+
+<div id="map_canvas" style="width:100%; height:100%"></div>
+
+<script type="text/javascript">
+    function onSuccess(data,textStatus) {
+        $('#ajaxBusy').show();
+        _model = SmithMicroHeatMapDataModel.get$();
+        _model.init(data);
+        __map__.setCenter(_model.map_center);
+        __map__.fitBounds(_model.map_bounds);
+
+        var aMarker;
+        var aDatum;
+        var units = GeolocationDistance.UNITS.feet;
+        for (var i = 0; i < _model.length(); i++) {
+            aDatum = _model.next_record();
+            _add_polygon_overlay(aDatum[GPS_SYMBOL],aDatum[ALPHA_SYMBOL],aDatum);
+        }
+        $('#ajaxBusy').hide();
+    }
+    function onError(jqXHR, textStatus, errorThrown) {
+        alert("error\n"+textStatus+'\n'+errorThrown);
+    }
+
+    var __interval_wait_for_heat_map_utils = -1;
+
+    function wait_for_heat_map_utils() {
+        if (__is_loaded_heat_map_utils__) {
+            if (__interval_wait_for_heat_map_utils > -1) {
+                window.clearInterval(__interval_wait_for_heat_map_utils);
+                __interval_wait_for_heat_map_utils = -1;
+            }
+            $.ajax({
+                url: '<%= report_path(@report) %>/data.json',
+                dataType: 'json',
+                success: onSuccess,
+                error: onError
+            });
+        }
+    }
+
+    $(document).ready(function() {
+        $('body').append('<div id="ajaxBusy"><p><img src="/heat-maps/ajax-loader.gif"></p></div>');
+        $('#ajaxBusy').css({
+            display:"none",
+            margin:"0px",
+            paddingLeft:"0px",
+            paddingRight:"0px",
+            paddingTop:"0px",
+            paddingBottom:"0px",
+            position:"fixed",
+            right:"50%",
+            top:"50%",
+            width:"auto"
+        });
+        $(document).ajaxStart(function(){
+            $('#ajaxBusy').show();
+        }).ajaxStop(function(){
+            $('#ajaxBusy').hide();
+        });
+
+        if (__interval_wait_for_heat_map_utils == -1) {
+            __interval_wait_for_heat_map_utils = window.setInterval(function() {wait_for_heat_map_utils();}, 250);
+        }
+
+    });
+</script>

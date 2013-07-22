@@ -1,0 +1,14 @@
+CMCXmlParser._FilePathToXmlStringMap.Add(
+	'Skin',
+	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
+	'<CatapultSkin Version=\"1\" Comment=\"Silver theme skin\" Anchors=\"Width,Height\" Width=\"800px\" Height=\"600px\" Top=\"0px\" Left=\"0px\" Bottom=\"0px\" Right=\"0px\" Tabs=\"TOC,Search\" DefaultTab=\"TOC\" UseBrowserDefaultSize=\"True\" UseDefaultBrowserSetup=\"true\" EnableAboutBox=\"false\" Title=\"VZAccess Manager Help\" NavigationLinkTop=\"true\">' +
+	'    <!-- saved from url=(0014)about:internet -->' +
+	'    <Index BinaryStorage=\"True\" />' +
+	'    <HtmlHelpOptions ShowMenuBar=\"False\" TopmostWindowStyle=\"False\" Buttons=\"Hide,Back,Forward,Print\" EnableButtonCaptions=\"True\" />' +
+	'    <Stylesheet Link=\"Stylesheet.xml\">' +
+	'    </Stylesheet>' +
+	'    <Toolbar EnableCustomLayout=\"true\" Buttons=\"ToggleNavigationPane|Separator|RemoveHighlight|Separator|Home|Separator|SelectTOC|SelectSearch|Separator|Print\" ExcludeAccordionTitle=\"true\" />' +
+	'    <WebHelpOptions HideNavigationOnStartup=\"false\" VisibleAccordionItemCount=\"3\" />' +
+	'    <TopicToolbar EnableCustomLayout=\"true\" Buttons=\"\" />' +
+	'</CatapultSkin>'
+);

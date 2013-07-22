@@ -1,0 +1,7 @@
+<div class="dialog filter-param-dialog">
+
+  <h1>New Check Boxes Param</h1>
+
+  <%= render 'check_boxes_filter_params/form' %>
+
+</div>

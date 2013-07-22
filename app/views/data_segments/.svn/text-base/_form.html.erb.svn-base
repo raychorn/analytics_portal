@@ -1,0 +1,28 @@
+<%= simple_form_for @data_segment do |form| %>
+
+  <div class="dialog-content">
+    <%= form.input :name %>
+    <%= form.input :description %>
+    <%= form.input :schedule, :hint => 'cron format' %>
+    <%= form.input :enable_schedule %>
+
+    <% if is_global_admin?(current_user) %>
+      <div class='col-4 global-admin'>
+        <%= form.association :data_source %>
+        <%= form.input :properties %>
+        <div id="queries" class="sub-form">
+          <h3>Queries</h3>
+          <%= form.simple_fields_for :queries do |query| %>
+            <%= render 'query_fields', :f => query %>
+          <% end %>
+          <div class="links">
+            <%= link_to_add_association 'add query', form, :queries %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <%= render :partial => 'shared/dialog_footer', :locals => {
+          :form => form, :cancel_path => data_segments_path} %>
+<% end %>

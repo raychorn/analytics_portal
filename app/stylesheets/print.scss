@@ -1,0 +1,16 @@
+@import "blueprint";
+
+//Recommended Blueprint configuration with scoping and semantic layout:
+/*body.bp {*/
+  /*@include blueprint-print(true); }*/
+
+#header,
+#footer,
+body.two-col #header,
+body.two-col #footer,
+.sub-nav-2,
+.debug,
+#footnotes_debug,
+body.two-col #content #content-main #sidebar {
+  display: none;
+}

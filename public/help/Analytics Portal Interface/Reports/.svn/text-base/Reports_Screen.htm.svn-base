@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1085" MadCap:lastWidth="873" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Analytics Portal Interface" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Analytics_portal_help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Reports Screen</title>
+        <link href="../../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Reports Screen</h1>
+        <p class="body">The Reports screen allows you to view individual reports and to create customized version of the reports for your own use or to share with other users. The screen is divided into two main sections, the Reports Tree and the Report Viewer.</p>
+        <p class="bodypic">
+            <img src="../../Resources/Images/reports_screen_80.png" style="max-width: auto;max-height: auto;" />
+        </p>
+        <h2>Reports List</h2>
+        <p class="body">The Reports List shows all of the reports that are available for viewing. The reports are divided into the following categories:</p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>My Reports - The <a href="../../Reports/Key Performance Indicators (KPI) Report.htm" target="" title="" alt="" class="MCXref_0">Key Performance Indicators (KPI) Report</a> and any customized reports you have created are listed under this category.</p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Customer Profiling - </p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Error Management - </p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Network Performance - </p>
+        <p class="Bullet" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Shared Reports - Any reports created by other users ans shared are listed in under this category.</p>
+        <p class="body">For more information on a report, see <a href="../../Reports/Reports.htm" target="" title="" alt="" class="MCXref_0">Reports</a>.    <![CDATA[ ]]></p>
+        <h2>Report Viewer</h2>
+        <p class="body">The Report Viewer displays the currently selected report. This area of the screen is blank until a a report is selected from the Report List.</p>
+        <h2>Edit Report Parameters</h2>
+        <p class="body">The Edit Report Parameters button displays Edit Report Parameters dialog. The Edit Report Parameters dialog allows you to change the parameters for the selected report.</p>
+        <div>
+            <p class="copyrightfooter" MadCap:conditions="Primary.Online">Copyright © 2011 Smith Micro Software, Inc.</p>
+        </div>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

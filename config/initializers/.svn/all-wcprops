@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/inflections.rb
+END
+devise.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/devise.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/session_store.rb
+END
+footnotes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/footnotes.rb
+END
+compass.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/compass.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/backtrace_silencers.rb
+END
+formtastic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/formtastic.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/mime_types.rb
+END
+simple_form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/config/initializers/simple_form.rb
+END

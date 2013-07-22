@@ -1,0 +1,41 @@
+
+--- 
+permissions: 
+  columns: 
+  - id
+  - name
+  - description
+  - ability
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - View Analytics and Run Reports
+    - ""
+    - 1
+    - 2011-05-27 00:51:11 Z
+    - 2011-05-27 00:51:11 Z
+  - - 2
+    - Create Reports
+    - ""
+    - 2
+    - 2011-05-27 00:51:11 Z
+    - 2011-05-27 00:51:11 Z
+  - - 3
+    - Manage Users
+    - ""
+    - 3
+    - 2011-05-27 00:51:11 Z
+    - 2011-05-27 00:51:11 Z
+  - - 4
+    - Manager Roles
+    - ""
+    - 4
+    - 2011-05-27 00:51:11 Z
+    - 2011-05-27 00:51:11 Z
+  - - 5
+    - Configuration
+    - ""
+    - 5
+    - 2011-05-27 00:51:11 Z
+    - 2011-05-27 00:51:11 Z

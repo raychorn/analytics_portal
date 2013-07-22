@@ -1,0 +1,26 @@
+<%- # required: report  %>
+<%- filter_prefs ||= nil %>
+<%- column_filter_hash ||= nil %>
+<%- columns = report.table_columns_array %>
+
+<div id="report_<%= report.id %>_content" class="report-content">
+
+  <table id="kpi_report_<%= report.id %>" class="display<%= (columns.try(:length) > 5) ? ' display-many-columns' : '' %>">
+
+    <caption><%= report.name %></caption>
+
+    <thead>
+      <tr>
+        <% columns.each do |col_name| %>
+          <th class="<%= col_name %>"><%= DataParameter.lookup_column_name(col_name) %></th>
+        <% end %>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- load by ajax -->
+    </tbody>
+
+  </table>
+
+</div>

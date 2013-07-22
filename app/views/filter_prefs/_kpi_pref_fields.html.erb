@@ -1,0 +1,27 @@
+<%- # requires :f (form) %>
+<%- report ||= f.object.filter_param.optionable %>
+
+<div class="nested-fields">
+  <div class="input select">
+    <%= f.label 'filter_param_id', 'Data' %>
+    <%- # TODO restrict filter_param_id permissions %>
+    <%= f.collection_select :filter_param_id, f.object.options_for_kpi_filter_params(report), :first, :last %>
+  </div>
+
+  <%= f.input :name %>
+  <%= f.input :target %>
+  <div class="input radio_select">
+    <%= f.label :alert_direction, 'Direction' %>
+    <% FilterParam.options_for_alert_direction.each do |option| %>
+      <%= f.radio_button :alert_direction, option.first %>
+      <%= f.label "alert_direction_#{option.first}", option.last, :class => 'check_box' %>
+      <div class="clear"></div>
+    <% end %>
+  </div>
+  <div class="input check_box_select">
+    <%= f.label :alert, 'Alert' %>
+    <%= f.input :enable_email, :label => "Email #{current_user.email}" %>
+  </div>
+
+  <%= link_to_remove_association "Remove KPI", f %>
+</div>

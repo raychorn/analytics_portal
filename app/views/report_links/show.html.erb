@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @report_link.name %>
+</p>
+
+<p>
+  <b>Report:</b>
+  <%= @report_link.report_id %>
+</p>
+
+<p>
+  <b>Linked report:</b>
+  <%= @report_link.linked_report_id %>
+</p>
+
+<p>
+  <b>Filter columns:</b>
+  <%= @report_link.filter_columns %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_link_path(@report_link) %> |
+<%= link_to 'Back', report_links_path %>

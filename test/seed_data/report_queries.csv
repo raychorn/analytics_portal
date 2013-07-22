@@ -1,0 +1,19 @@
+id,report_id,query_id,chart_type,chart_params,x_column,y_column,radius_column,name_column,query_select_group,sql_string
+1,1,10,area,NULL,day,sum_avg_141_142,NULL,NULL,NULL,NULL
+2,1,13,line,NULL,day,sum_avg_143_144,NULL,NULL,NULL,NULL
+3,1,16,line,NULL,day,sum_avg_145_146,NULL,NULL,NULL,NULL
+4,2,14,scatter,NULL,x,sum_avg_141_142,radius_data,NULL,NULL,NULL
+5,3,15,area,NULL,date,sum_avg_141_142,NULL,NULL,NULL,NULL
+6,3,1,line,NULL,date,sum_avg_143_144,NULL,NULL,NULL,NULL
+7,3,4,line,NULL,date,sum_avg_145_146,NULL,NULL,NULL,NULL
+8,4,18,area,NULL,server_date,sum_avg_upload_download,NULL,NULL,NULL,"SELECT sum_avg_upload_download, server_date FROM {table_name} WHERE devicetype = ""3GDevice"";"
+9,4,18,area,NULL,server_date,sum_avg_upload_download,NULL,NULL,NULL,"SELECT sum_avg_upload_download, server_date FROM {table_name} WHERE devicetype = ""EthernetDevice"";"
+10,5,2,area,NULL,hour,sum_avg_141_142,NULL,NULL,NULL,NULL
+11,5,5,line,NULL,hour,sum_avg_143_144,NULL,NULL,NULL,NULL
+12,5,8,line,NULL,hour,sum_avg_145_146,NULL,NULL,NULL,NULL
+13,6,3,column,"{ ""color"":""#89A54E""}",date,sum_avg_141_142,NULL,NULL,NULL,NULL
+14,6,6,column,"{ ""color"":""#4572A7""}",date,sum_avg_143_144,NULL,NULL,NULL,NULL
+15,6,9,column,"{ ""color"":""#AA4643""}",date,sum_avg_145_146,NULL,NULL,NULL,NULL
+16,6,12,NULL,"{""color"":""#F88017""}",date,sum_avg_147_148,NULL,NULL,NULL,NULL
+17,7,7,pie,NULL,device_name,device_usage_percentage,NULL,NULL,NULL,NULL
+18,8,11,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

@@ -1,0 +1,9 @@
+<div class="dialog filter-param-dialog">
+
+  <h1>Edit <%= @filter_param.type.to_s.underscore.humanize.titlecase %></h1>
+
+  <%= render_filter_param @filter_param, :partial => 'form' %>
+
+  <div class="clear"></div>
+
+</div>

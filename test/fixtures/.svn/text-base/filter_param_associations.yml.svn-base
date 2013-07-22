@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  filter_param_id: 1
+  optionable_id: 1
+  optionable_type: 1
+
+two:
+  filter_param_id: 1
+  optionable_id: 1
+  optionable_type: 1

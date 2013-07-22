@@ -1,0 +1,33 @@
+# SQLite version 3.x
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: analytics_portal_dev
+  pool: 5
+  username: analytics_portal
+  password: gyd82jd
+  host: localhost
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &TEST
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: analytics_portal_test
+  pool: 5
+  username: analytics_portal
+  password: gyd82jd
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: analytics_portal
+  pool: 5
+  username: analytics_portal
+  password: gyd82jd
+  host: localhost

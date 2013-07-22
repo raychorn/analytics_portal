@@ -1,0 +1,14 @@
+<%= simple_form_for @filter_set do |form| %>
+  <div class="dialog-content">
+    <%= form.input :name, :input_html => { :size => 40 } %>
+    <NOBR><%= form.check_box :region %><%= label :region, 'Has Geographical Region' %></NOBR>
+    <%= form.input :description, :input_html => { :rows => 5, :cols => 40 } %>
+
+    <%= form.simple_fields_for :filter_param_associations do |filter_param_association| %>
+      <%= filter_param_association.input :filter_param_id, :as => :hidden %>
+      <%= render :partial => 'filter_prefs/fields_for_dialog', :locals => {:form => filter_param_association} %>
+    <% end %>
+
+  </div>
+  <%= render :partial => 'shared/dialog_footer', :locals => {:form => form, :cancel_path => filter_sets_path} %>
+<% end %>

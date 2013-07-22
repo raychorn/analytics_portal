@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/kpi_reports
+END
+_trend_3_months_chart.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/kpi_reports/_trend_3_months_chart.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/kpi_reports/new.html.erb
+END
+_display_data.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/kpi_reports/_display_data.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/kpi_reports/_form.html.erb
+END

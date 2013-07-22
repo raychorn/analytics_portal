@@ -1,0 +1,27 @@
+<%- # required: cancel_path %>
+<%- form ||= nil %>
+<%- dialog_info ||= nil %>
+<%- submit_button_text ||= 'Save' %>
+<%- obj ||= nil %>
+
+<div class="footer">
+  <% if dialog_info.present? %>
+    <div class="dialog-info"><%= dialog_info %></div>
+  <% end %>
+  <% if obj.present? && !obj.new_record? %>
+    <%= link_to 'Delete', obj, :confirm => 'Are you sure?', :method => :delete, :class => 'delete-button' %>
+  <% end %>
+  <div class="buttons-wrapper">
+    <div class="buttons">
+      <%= link_to 'Cancel', cancel_path, :class => 'cancel-button' %>
+      <% if form.present? %>
+        <%= form.button :submit, :value => submit_button_text %>
+      <% else %>
+
+      <% end %>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>

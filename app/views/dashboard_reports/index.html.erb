@@ -1,0 +1,28 @@
+<div id="content-main">
+
+<h1>Listing dashboard_reports</h1>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>dashboard name</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dashboard_reports.each do |dashboard_report| %>
+  <tr>
+    <td><%= dashboard_report.id %></td>
+    <td><%= dashboard_report.dashboard.name %></td>
+    <td><%= link_to 'Show', dashboard_report %></td>
+    <td><%= link_to 'Edit', edit_dashboard_report_path(dashboard_report) %></td>
+    <td><%= link_to 'Destroy', dashboard_report, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dashboard report', new_dashboard_report_path %>
+
+</div>

@@ -1,0 +1,1343 @@
+/* line 4, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 9, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .clear {
+  clear: both;
+}
+/* line 12, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .nowrap {
+  white-space: nowrap;
+}
+/* line 16, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 18, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .small {
+  font-size: 0.8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+/* line 22, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+/* line 26, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .first {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 29, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .last {
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 32, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .top {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 35, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+body.bp .bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 31, ../../../app/stylesheets/partials/_page.scss */
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("/images/header/header-bg.jpg") repeat-x scroll 0 0 #c7c7c7;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  color: #1e1e1e;
+}
+
+/* line 41, ../../../app/stylesheets/partials/_page.scss */
+body.logged-in {
+  background: url("/images/header/header-logged-in-bg.jpg") repeat-x scroll 0 0 #c7c7c7;
+}
+
+/* line 45, ../../../app/stylesheets/partials/_page.scss */
+body.bp ul, body.bp ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 50, ../../../app/stylesheets/partials/_page.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 54, ../../../app/stylesheets/partials/_page.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 59, ../../../app/stylesheets/partials/_page.scss */
+.debug li {
+  list-style: none;
+}
+
+/* line 68, ../../../app/stylesheets/partials/_page.scss */
+#header-bg {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+
+/* line 74, ../../../app/stylesheets/partials/_page.scss */
+#header {
+  position: relative;
+}
+
+/* line 78, ../../../app/stylesheets/partials/_page.scss */
+#smithmicro-logo-main {
+  float: left;
+  height: 80px;
+  width: 240px;
+  background: url("/images/logo/SM-Analytics-logo.png") no-repeat scroll center 13px transparent;
+  border-right: 1px solid #3e6485;
+}
+
+/* line 90, ../../../app/stylesheets/partials/_page.scss */
+#header .root-nav {
+  border-left: 1px solid #3e6485;
+  height: 73px;
+  padding: 7px 0 0 30px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 240px;
+  color: #aeaeaa;
+}
+/* line 99, ../../../app/stylesheets/partials/_page.scss */
+#header .root-nav li {
+  display: inline;
+  font-size: 12px;
+}
+/* line 102, ../../../app/stylesheets/partials/_page.scss */
+#header .root-nav li a {
+  color: #8daf17;
+}
+/* line 106, ../../../app/stylesheets/partials/_page.scss */
+#header .root-nav li.customer-name {
+  color: white;
+  display: block;
+  padding: 7px 0;
+}
+/* line 111, ../../../app/stylesheets/partials/_page.scss */
+#header .root-nav li.logged-in {
+  color: #aeaeaa;
+}
+
+/* line 152, ../../../app/stylesheets/partials/_page.scss */
+.main-nav {
+  float: left;
+}
+/* line 118, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items {
+  padding-left: 0px;
+}
+/* line 120, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li {
+  float: left;
+  position: relative;
+  height: 43px;
+  list-style: none;
+}
+/* line 125, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li a.name, .main-nav .nav-items li span.name {
+  margin: 0 30px;
+  line-height: 40px;
+  color: #21415e;
+}
+/* line 130, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li a.action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 20px;
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+}
+/* line 138, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li a:hover.action {
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+}
+/* line 142, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li.current a.name {
+  color: white;
+}
+/* line 145, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li.global-admin {
+  border: none;
+  font-size: 16px;
+}
+/* line 154, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items {
+  position: relative;
+  top: 40px;
+}
+/* line 157, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li {
+  height: 40px;
+  border-right: 1px solid #3e6485;
+}
+/* line 158, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li a.name {
+  color: #aeaeaa;
+}
+/* line 164, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li.last {
+  border-right: none;
+}
+/* line 167, ../../../app/stylesheets/partials/_page.scss */
+.main-nav .nav-items li.current {
+  background: url("/images/header/main-nav-active-arrow.jpg") no-repeat scroll center bottom transparent;
+}
+
+/* line 173, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav {
+  float: left;
+  float: none;
+  font-size: 22px;
+  height: 43px;
+  width: 100%;
+  background-color: transparent;
+  float: none;
+  font-size: 22px;
+  height: 43px;
+  position: relative;
+  width: 100%;
+}
+/* line 118, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items {
+  padding-left: 0px;
+}
+/* line 120, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li {
+  float: left;
+  position: relative;
+  height: 43px;
+  list-style: none;
+}
+/* line 125, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li a.name, .sub-nav .nav-items li span.name {
+  margin: 0 30px;
+  line-height: 40px;
+  color: #21415e;
+}
+/* line 130, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li a.action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 20px;
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+}
+/* line 138, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li a:hover.action {
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+}
+/* line 142, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li.current a.name {
+  color: white;
+}
+/* line 145, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav .nav-items li.global-admin {
+  border: none;
+  font-size: 16px;
+}
+/* line 185, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav li.current {
+  background: url("/images/header/second-menu-active-arrow.png") no-repeat scroll center bottom transparent;
+}
+
+/* line 190, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 {
+  float: left;
+  background: url("/images/header/header-bg.jpg") repeat scroll 0 0 transparent;
+  float: none;
+  height: 41px;
+  position: relative;
+  width: 100%;
+}
+/* line 118, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items {
+  padding-left: 0px;
+}
+/* line 120, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li {
+  float: left;
+  position: relative;
+  height: 43px;
+  list-style: none;
+}
+/* line 125, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li a.name, .sub-nav-2 .nav-items li span.name {
+  margin: 0 30px;
+  line-height: 40px;
+  color: #21415e;
+}
+/* line 130, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li a.action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 20px;
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+}
+/* line 138, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li a:hover.action {
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+}
+/* line 142, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li.current a.name {
+  color: white;
+}
+/* line 145, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li.global-admin {
+  border: none;
+  font-size: 16px;
+}
+/* line 198, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li {
+  height: 41px;
+  width: 158px;
+  background-color: #aeaeaa;
+  border-right: 1px solid #21415E;
+}
+/* line 204, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li.current {
+  background-color: #f2f2f2;
+}
+/* line 208, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .nav-items li.current a.name,
+.sub-nav-2 .nav-items li a.name {
+  color: #21415e;
+  display: block;
+  width: 108px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 30px 0 0;
+  padding-left: 20px;
+  height: 41px;
+  text-align: center;
+}
+/* line 220, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 li.action-tab {
+  background: transparent;
+  border-right: none;
+  width: auto;
+}
+/* line 224, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 li.action-tab a.name {
+  color: #8daf17;
+  padding: 0 0 0 20px;
+  margin-left: 30px;
+  background: url("/images/content/add-icon.png") no-repeat scroll left center transparent;
+  width: auto;
+}
+/* line 232, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .title {
+  width: 710px;
+  float: right;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 41px;
+}
+/* line 239, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .title .name {
+  position: relative;
+}
+/* line 242, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .title a.edit-button {
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  width: 20px;
+}
+/* line 250, ../../../app/stylesheets/partials/_page.scss */
+.sub-nav-2 .title a.print-button {
+  background: url("/images/content/print-icon.png") no-repeat scroll;
+  height: 20px;
+  position: absolute;
+  right: -55px;
+  top: 2px;
+  width: 20px;
+}
+
+/* line 263, ../../../app/stylesheets/partials/_page.scss */
+#content-main.dashboards .sub-nav-2 li.action-tab {
+  background: #21415e;
+}
+/* line 265, ../../../app/stylesheets/partials/_page.scss */
+#content-main.dashboards .sub-nav-2 li.action-tab a.name {
+  margin: 0 30px 0 20px;
+  padding: 0 0 0 15px;
+  width: 108px;
+}
+
+/* line 280, ../../../app/stylesheets/partials/_page.scss */
+.notice,
+.alert,
+.no-message {
+  margin: 10px auto;
+  border: 2px solid;
+  border-color: transparent;
+  padding: 15px 30px;
+}
+
+/* line 287, ../../../app/stylesheets/partials/_page.scss */
+.notice {
+  border-color: black;
+  background-color: #f2f2f2;
+}
+
+/* line 292, ../../../app/stylesheets/partials/_page.scss */
+.alert {
+  border-color: #E94E4D;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* line 302, ../../../app/stylesheets/partials/_page.scss */
+#content {
+  margin-top: 20px;
+}
+
+/* line 306, ../../../app/stylesheets/partials/_page.scss */
+body.two-col #sidebar {
+  background-color: #e3e3e3;
+}
+/* line 308, ../../../app/stylesheets/partials/_page.scss */
+body.two-col #sidebar div.spacer {
+  height: 20px;
+}
+
+/* line 313, ../../../app/stylesheets/partials/_page.scss */
+#content-main {
+  background-color: #f2f2f2;
+}
+
+/* line 317, ../../../app/stylesheets/partials/_page.scss */
+#content-body {
+  padding: 18px 15px 15px 15px;
+}
+/* line 318, ../../../app/stylesheets/partials/_page.scss */
+#content-body div.spacer {
+  height: 20px;
+}
+
+/* line 328, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table {
+  width: 100%;
+}
+/* line 331, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table thead th {
+  border-bottom: 1px solid #aeaeaa;
+  color: #1e1e1e;
+}
+/* line 335, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table thead th.actions {
+  padding: 0 15px 0 5px;
+}
+/* line 338, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table thead a, table.combo-table thead a:visited {
+  color: #1e1e1e;
+}
+/* line 342, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table tr.odd {
+  background-color: #e7e7e7;
+}
+/* line 345, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table th, table.combo-table td, table.combo-table caption {
+  padding: 10px 15px;
+}
+/* line 348, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table th {
+  font-weight: bold;
+}
+/* line 353, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.start,
+table.combo-table td.edit,
+table.combo-table td.destroy {
+  width: 30px;
+  padding: 0px;
+}
+/* line 357, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.show {
+  padding: 0 5px;
+}
+/* line 362, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.start a,
+table.combo-table td.edit a,
+table.combo-table td.destroy a {
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+/* line 367, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.start a {
+  background: url("/images/content/start-icon.png") no-repeat scroll center center transparent;
+}
+/* line 370, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.edit a {
+  background: url("/images/content/edit-large-icon.png") no-repeat scroll center center transparent;
+}
+/* line 373, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table td.destroy a {
+  background: url("/images/content/delete-icon.png") no-repeat scroll center center transparent;
+}
+/* line 376, ../../../app/stylesheets/partials/_page.scss */
+table.combo-table a, table.combo-table a:visited {
+  color: #000066;
+}
+
+/* line 382, ../../../app/stylesheets/partials/_page.scss */
+.show-object .value-pair {
+  margin-bottom: 20px;
+}
+/* line 384, ../../../app/stylesheets/partials/_page.scss */
+.show-object .value-pair .label {
+  font-weight: bold;
+  margin: 0;
+}
+/* line 388, ../../../app/stylesheets/partials/_page.scss */
+.show-object .value-pair .value {
+  margin: 0;
+}
+/* line 392, ../../../app/stylesheets/partials/_page.scss */
+.show-object .edit-link {
+  display: block;
+  margin: 20px 0;
+}
+
+/* line 402, ../../../app/stylesheets/partials/_page.scss */
+form.search-form {
+  position: absolute;
+  right: 18px;
+  top: 9px;
+}
+/* line 406, ../../../app/stylesheets/partials/_page.scss */
+form.search-form p a.clear-button {
+  color: white;
+}
+/* line 413, ../../../app/stylesheets/partials/_page.scss */
+form.search-form #search,
+form.search-form span.search-left-bg,
+form.search-form span.search-icon,
+form.search-form .submit-button,
+form.search-form .clear-button {
+  display: inline;
+  float: left;
+  height: 23px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 422, ../../../app/stylesheets/partials/_page.scss */
+form.search-form #search {
+  width: 179px;
+  padding-left: 16px;
+  background: url("/images/content/search-bg.png") repeat-x left top white;
+}
+/* line 427, ../../../app/stylesheets/partials/_page.scss */
+form.search-form span.search-left-bg {
+  width: 12px;
+  background: url("/images/content/search-left-bg.png") no-repeat center center transparent;
+}
+/* line 431, ../../../app/stylesheets/partials/_page.scss */
+form.search-form span.search-icon {
+  position: absolute;
+  width: 13px;
+  left: 12px;
+  top: 0;
+  background: url("/images/content/search-icon.png") no-repeat center center transparent;
+}
+/* line 438, ../../../app/stylesheets/partials/_page.scss */
+form.search-form .submit-button {
+  width: 35px;
+  cursor: pointer;
+  left: -3px;
+  top: 1px;
+  color: white;
+  background: url("/images/content/search-go-bg.png") no-repeat center center transparent;
+}
+/* line 446, ../../../app/stylesheets/partials/_page.scss */
+form.search-form .clear-button {
+  padding-left: 5px;
+  width: 23px;
+  background: url("/images/content/clear-icon.png") no-repeat center center transparent;
+}
+
+/* line 453, ../../../app/stylesheets/partials/_page.scss */
+#reports_search #search {
+  width: 128px;
+}
+
+/* line 457, ../../../app/stylesheets/partials/_page.scss */
+body.two-col form.search-form {
+  position: absolute;
+  left: 18px;
+}
+
+/* line 466, ../../../app/stylesheets/partials/_page.scss */
+.dialog {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+/* line 468, ../../../app/stylesheets/partials/_page.scss */
+.dialog h1 {
+  background-color: #21415e;
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 14px 0 14px 30px;
+}
+/* line 476, ../../../app/stylesheets/partials/_page.scss */
+.dialog h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+/* line 481, ../../../app/stylesheets/partials/_page.scss */
+.dialog .dialog-content {
+  margin: 10px 20px;
+}
+/* line 484, ../../../app/stylesheets/partials/_page.scss */
+.dialog label {
+  margin: 2px 0;
+  display: block;
+}
+/* line 489, ../../../app/stylesheets/partials/_page.scss */
+.dialog label.boolean,
+.dialog label.check_box {
+  display: inline;
+}
+/* line 494, ../../../app/stylesheets/partials/_page.scss */
+.dialog label.check_boxes,
+.dialog label.collection_radio,
+.dialog label.collection_check_boxes {
+  display: block;
+  margin: 2px 0 2px 10px;
+}
+/* line 500, ../../../app/stylesheets/partials/_page.scss */
+.dialog input.string,
+.dialog textarea,
+.dialog select {
+  display: block;
+}
+/* line 503, ../../../app/stylesheets/partials/_page.scss */
+.dialog .filters {
+  float: left;
+}
+/* line 507, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-1,
+.dialog .col-2 {
+  float: left;
+  width: 260px;
+}
+/* line 511, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-1 input.string,
+.dialog .col-1 textarea,
+.dialog .col-2 input.string,
+.dialog .col-2 textarea {
+  width: 230px;
+}
+/* line 514, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-1 textarea,
+.dialog .col-2 textarea {
+  height: 100px;
+}
+/* line 518, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-a {
+  float: left;
+  width: 300px;
+}
+/* line 522, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-a input.string,
+.dialog .col-a textarea {
+  width: 265px;
+}
+/* line 525, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-a textarea {
+  height: 100px;
+}
+/* line 529, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-1 {
+  padding: 15px 0;
+}
+/* line 532, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-2 {
+  padding: 15px 0;
+}
+/* line 535, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-3 {
+  padding-bottom: 15px;
+}
+/* line 537, ../../../app/stylesheets/partials/_page.scss */
+.dialog .col-3 .multi-check-boxes {
+  float: left;
+  padding-left: 15px;
+}
+/* line 542, ../../../app/stylesheets/partials/_page.scss */
+.dialog .input {
+  margin: 5px 15px 5px 15px;
+}
+/* line 545, ../../../app/stylesheets/partials/_page.scss */
+.dialog .date-input {
+  padding-left: 30px;
+}
+/* line 548, ../../../app/stylesheets/partials/_page.scss */
+.dialog .date-input label.string,
+.dialog .date-input input.string {
+  width: 185px;
+}
+/* line 552, ../../../app/stylesheets/partials/_page.scss */
+.dialog .sub-check-boxes {
+  background-color: white;
+  margin-left: 30px;
+  width: 190px;
+  height: 120px;
+  overflow: auto;
+}
+/* line 559, ../../../app/stylesheets/partials/_page.scss */
+.dialog .dialog-info {
+  text-align: center;
+  padding: 10px 5px 5px 5px;
+}
+/* line 563, ../../../app/stylesheets/partials/_page.scss */
+.dialog .footer {
+  border-top: 1px solid black;
+  clear: both;
+  margin: 0 15px;
+  position: relative;
+}
+/* line 569, ../../../app/stylesheets/partials/_page.scss */
+.dialog .buttons-wrapper {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+/* line 573, ../../../app/stylesheets/partials/_page.scss */
+.dialog .buttons-wrapper .buttons {
+  float: left;
+  position: relative;
+  left: -50%;
+  margin: 10px 0;
+}
+/* line 582, ../../../app/stylesheets/partials/_page.scss */
+.dialog .button,
+.dialog .cancel-button,
+.dialog .delete-button {
+  display: block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  color: white;
+  font-size: 13px;
+}
+/* line 592, ../../../app/stylesheets/partials/_page.scss */
+.dialog .delete-button {
+  position: absolute;
+  background: #aeaeaa;
+  bottom: 10px;
+  left: 0;
+}
+/* line 598, ../../../app/stylesheets/partials/_page.scss */
+.dialog .cancel-button {
+  height: 28px;
+  background: #aeaeaa;
+  float: left;
+}
+/* line 603, ../../../app/stylesheets/partials/_page.scss */
+.dialog .button {
+  background: #8daf17;
+  float: left;
+}
+
+/* line 610, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog,
+.reset-password-dialog {
+  width: 350px;
+  position: relative;
+}
+/* line 613, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form,
+.reset-password-dialog .simple_form {
+  padding-top: 15px;
+}
+/* line 615, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .dialog-content,
+.reset-password-dialog .simple_form .dialog-content {
+  border-top: 1px solid #BDBDBD;
+  padding-top: 10px;
+}
+/* line 620, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form div.email,
+.login-dialog .simple_form div.password,
+.reset-password-dialog .simple_form div.email,
+.reset-password-dialog .simple_form div.password {
+  margin: 0 5px;
+}
+/* line 623, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form div.email input,
+.login-dialog .simple_form div.email label,
+.login-dialog .simple_form div.password input,
+.login-dialog .simple_form div.password label,
+.reset-password-dialog .simple_form div.email input,
+.reset-password-dialog .simple_form div.email label,
+.reset-password-dialog .simple_form div.password input,
+.reset-password-dialog .simple_form div.password label {
+  width: 270px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 628, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form div.email label,
+.login-dialog .simple_form div.password label,
+.reset-password-dialog .simple_form div.email label,
+.reset-password-dialog .simple_form div.password label {
+  padding: 2px 0;
+}
+/* line 632, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form input#user_submit,
+.reset-password-dialog .simple_form input#user_submit {
+  float: right;
+  margin-right: 22px;
+}
+/* line 636, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .footer,
+.reset-password-dialog .simple_form .footer {
+  border-top: 1px solid #BDBDBD;
+  padding: 15px 0;
+}
+/* line 639, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .footer div.options,
+.reset-password-dialog .simple_form .footer div.options {
+  float: left;
+  margin-left: 22px;
+}
+/* line 642, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .footer div.options div.input,
+.reset-password-dialog .simple_form .footer div.options div.input {
+  margin: 0;
+}
+/* line 646, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .footer a,
+.reset-password-dialog .simple_form .footer a {
+  color: #8daf17;
+}
+/* line 649, ../../../app/stylesheets/partials/_page.scss */
+.login-dialog .simple_form .footer div.input,
+.reset-password-dialog .simple_form .footer div.input {
+  margin: 0 0 0 15px;
+}
+
+/* line 663, ../../../app/stylesheets/partials/_page.scss */
+.user-dialog,
+.role-dialog,
+.dashboard-report-dialog,
+.dashboard-dialog,
+.dashboard-select-dialog,
+.configuration-dialog,
+.data-source-dialog,
+.filter-set-dialog {
+  width: 560px;
+}
+
+/* line 669, ../../../app/stylesheets/partials/_page.scss */
+.dashboard-select-dialog .owner-name,
+.configuration-dialog .owner-name {
+  padding-left: 20px;
+}
+/* line 672, ../../../app/stylesheets/partials/_page.scss */
+.dashboard-select-dialog .default,
+.configuration-dialog .default {
+  font-weight: bold;
+}
+/* line 675, ../../../app/stylesheets/partials/_page.scss */
+.dashboard-select-dialog label.collection_radio,
+.configuration-dialog label.collection_radio {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 686, ../../../app/stylesheets/partials/_page.scss */
+.simple_form {
+  /*.input {*/
+  /*label {*/
+  /*float: left;*/
+  /*width: 150px;*/
+  /*}*/
+  /*label.collection_check_boxes {*/
+  /*display: inline;*/
+  /*float: none;*/
+  /*}*/
+  /*}*/
+}
+/* line 687, ../../../app/stylesheets/partials/_page.scss */
+.simple_form .error {
+  color: red;
+}
+
+/* line 706, ../../../app/stylesheets/partials/_page.scss */
+.global-admin {
+  border: 2px solid red;
+}
+/* line 707, ../../../app/stylesheets/partials/_page.scss */
+.global-admin .sub-form {
+  border-top: 2px solid black;
+}
+/* line 711, ../../../app/stylesheets/partials/_page.scss */
+.global-admin .nested-fields {
+  border-bottom: 1px solid black;
+}
+
+/* line 722, ../../../app/stylesheets/partials/_page.scss */
+.container ul.reports-list {
+  margin: 10px 0 10px 10px;
+}
+
+/* line 726, ../../../app/stylesheets/partials/_page.scss */
+.report {
+  position: relative;
+}
+/* line 728, ../../../app/stylesheets/partials/_page.scss */
+.report a.edit-button {
+  /*float: right;*/
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+}
+/* line 738, ../../../app/stylesheets/partials/_page.scss */
+.report a:hover.edit-button {
+  background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+}
+
+/* line 743, ../../../app/stylesheets/partials/_page.scss */
+.report {
+  position: relative;
+}
+/* line 745, ../../../app/stylesheets/partials/_page.scss */
+.report a.print-button {
+  /*float: right;*/
+  display: block;
+  position: fixed;
+  top: 155px;
+  right: 325px;
+  width: 20px;
+  height: 20px;
+  background: url("/images/content/print-icon.png") no-repeat scroll;
+}
+/* line 755, ../../../app/stylesheets/partials/_page.scss */
+.report a:hover.print-button {
+  background: url("/images/content/print-icon.png") no-repeat scroll;
+}
+
+/* line 761, ../../../app/stylesheets/partials/_page.scss */
+.report,
+.large-report {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* line 767, ../../../app/stylesheets/partials/_page.scss */
+.medium-report {
+  width: 48%;
+}
+
+/* line 771, ../../../app/stylesheets/partials/_page.scss */
+.small-report {
+  width: 31%;
+  height: 300px;
+}
+
+/* line 778, ../../../app/stylesheets/partials/_page.scss */
+table.report th, table.report td,
+table.queries th,
+table.queries td {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
+
+/* line 789, ../../../app/stylesheets/partials/_page.scss */
+table.queries th, table.queries td {
+  text-align: left;
+}
+
+/* line 795, ../../../app/stylesheets/partials/_page.scss */
+table.display {
+  background-color: white;
+  table-layout: fixed;
+  word-wrap: break-word;
+  /*height: 130px;*/
+}
+/* line 800, ../../../app/stylesheets/partials/_page.scss */
+table.display caption {
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  color: #21415e;
+  padding: 10px 0;
+}
+/* line 807, ../../../app/stylesheets/partials/_page.scss */
+table.display th, table.display td {
+  overflow: hidden;
+}
+/* line 810, ../../../app/stylesheets/partials/_page.scss */
+table.display .trend-graph {
+  height: 40px;
+}
+/* line 813, ../../../app/stylesheets/partials/_page.scss */
+table.display span.alert-bullet {
+  color: red;
+  font-weight: bold;
+}
+/* line 817, ../../../app/stylesheets/partials/_page.scss */
+table.display span.bad {
+  color: red;
+}
+/* line 820, ../../../app/stylesheets/partials/_page.scss */
+table.display span.good {
+  color: green;
+}
+
+/* line 825, ../../../app/stylesheets/partials/_page.scss */
+.dataTables_processing {
+  border: none;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 12px;
+  /*height:50px;*/
+  /*left:0;*/
+  margin-top: 0;
+  /*padding:0;*/
+  /*position:absolute;*/
+  /*visibility:hidden;*/
+  /*line-height:50px;*/
+  /*vertical-align: middle;*/
+  top: 34px;
+}
+
+/* line 841, ../../../app/stylesheets/partials/_page.scss */
+table.display-many-columns {
+  font-size: 10px;
+}
+
+/* line 849, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview {
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 447px;
+}
+/* line 854, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview span.folder {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #454545;
+  background-color: white;
+  border-top: 1px dotted #9E9E9E;
+  padding-left: 30px;
+}
+/* line 863, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview .hitarea {
+  margin: 0;
+  height: 30px;
+  width: 30px;
+  background: url("/images/treeview/arrows.png") no-repeat scroll 1px 1px transparent;
+}
+/* line 869, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview .expandable-hitarea {
+  background: url("/images/treeview/arrows.png") no-repeat scroll -27px 1px transparent;
+}
+/* line 872, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li {
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+/* line 877, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li.file {
+  padding: 0 0 0 35px;
+  background-image: none;
+  background-color: #e3e3e3;
+}
+/* line 881, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li.file a, #tree.treeview li.file span {
+  color: #21415e;
+}
+/* line 885, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li.active-file {
+  background-color: #21415e;
+}
+/* line 887, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li.active-file a, #tree.treeview li.active-file span {
+  color: #e3e3e3;
+}
+/* line 890, ../../../app/stylesheets/partials/_page.scss */
+#tree.treeview li.active-file span {
+  float: right;
+  padding-right: 15px;
+}
+
+/* line 18, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp label {
+  font-weight: bold;
+}
+/* line 19, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+/* line 20, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 26, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 27, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input.title {
+  font-size: 1.5em;
+}
+/* line 31, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input[type=checkbox], form.bp input.checkbox, form.bp input[type=radio], form.bp input.radio {
+  position: relative;
+  top: 0.25em;
+}
+/* line 33, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+/* line 34, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp select {
+  margin: 0.5em 0;
+}
+/* line 59, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp fieldset {
+  border: 1px solid #cccccc;
+}
+/* line 62, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password],
+form.bp textarea, form.bp select {
+  border: 1px solid #bbbbbb;
+}
+/* line 64, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus,
+form.bp textarea:focus, form.bp select:focus {
+  border: 1px solid #666666;
+}
+/* line 48, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] {
+  width: 300px;
+}
+/* line 50, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form.bp textarea {
+  width: 390px;
+  height: 250px;
+}
+
+/* line 25, ../../../app/stylesheets/partials/_one_col.scss */
+body.one-col #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 27, ../../../app/stylesheets/partials/_one_col.scss */
+body.one-col #header, body.one-col #footer {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 950px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.one-col #header, * html body.one-col #footer {
+  overflow-x: hidden;
+}
+/* line 29, ../../../app/stylesheets/partials/_one_col.scss */
+body.one-col #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 0px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.one-col #sidebar {
+  overflow-x: hidden;
+}
+/* line 33, ../../../app/stylesheets/partials/_one_col.scss */
+body.one-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.one-col #content {
+  overflow-x: hidden;
+}
+
+/* line 25, ../../../app/stylesheets/partials/_two_col.scss */
+body.two-col #container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 28, ../../../app/stylesheets/partials/_two_col.scss */
+body.two-col #header, body.two-col #footer {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 950px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #header, * html body.two-col #footer {
+  overflow-x: hidden;
+}
+/* line 31, ../../../app/stylesheets/partials/_two_col.scss */
+body.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 950px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #content {
+  overflow-x: hidden;
+}
+/* line 34, ../../../app/stylesheets/partials/_two_col.scss */
+body.two-col #content #content-main #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 237.5px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #content #content-main #sidebar {
+  overflow-x: hidden;
+}
+/* line 39, ../../../app/stylesheets/partials/_two_col.scss */
+body.two-col #content #content-main #content-wrapper {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 712.5px;
+}
+/* line 138, ../../../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #content #content-main #content-wrapper {
+  overflow-x: hidden;
+}

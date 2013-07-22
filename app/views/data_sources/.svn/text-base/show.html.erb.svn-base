@@ -1,0 +1,26 @@
+<div id="content-main">
+  <%= render :partial => 'shared/sub_nav_2', :locals => {
+          :object_sym => :data_source, :hide_search => true, :action => 'edit'} %>
+
+  <div id="content-body">
+
+    <table class="combo-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Url</th>
+        <th>Database Name</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>&nbsp;<%= @data_source.name %></td>
+        <td><%= @data_source.url %></td>
+        <td><%= @data_source.database_name %></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

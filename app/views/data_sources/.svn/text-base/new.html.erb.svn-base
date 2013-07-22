@@ -1,0 +1,7 @@
+<div class="dialog data-source-dialog">
+
+  <h1>New Data Source</h1>
+
+  <%= render 'form' %>
+
+</div>

@@ -1,0 +1,17 @@
+
+--- 
+data_sources: 
+  columns: 
+  - id
+  - name
+  - url
+  - created_at
+  - updated_at
+  - database_name
+  records: 
+  - - 1
+    - analytics-admin
+    - http://analytics-admin:3001
+    - 2011-05-27 00:51:11 Z
+    - 2011-06-28 16:07:24 Z
+    - 

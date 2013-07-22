@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Report:</b>
+  <%= @report_query.report_id %>
+</p>
+
+<p>
+  <b>Query:</b>
+  <%= @report_query.query_id %>
+</p>
+
+<p>
+  <b>Chart type:</b>
+  <%= @report_query.chart_type %>
+</p>
+
+<p>
+  <b>Chart params:</b>
+  <%= @report_query.chart_params %>
+</p>
+
+<p>
+  <b>X column:</b>
+  <%= @report_query.x_column %>
+</p>
+
+<p>
+  <b>Y column:</b>
+  <%= @report_query.y_column %>
+</p>
+
+<p>
+  <b>Radius column:</b>
+  <%= @report_query.radius_column %>
+</p>
+
+<p>
+  <b>Name column:</b>
+  <%= @report_query.name_column %>
+</p>
+
+<p>
+  <b>Query select group:</b>
+  <%= @report_query.query_select_group %>
+</p>
+
+<p>
+  <b>Sql string:</b>
+  <%= @report_query.sql_string %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_query_path(@report_query) %> |
+<%= link_to 'Back', report_queries_path %>

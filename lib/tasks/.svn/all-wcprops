@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/lib/tasks
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/lib/tasks/.gitkeep
+END
+sample_data_old.rake
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/lib/tasks/sample_data_old.rake
+END
+sample_data.rake
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/lib/tasks/sample_data.rake
+END

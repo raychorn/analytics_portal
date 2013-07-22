@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim
+END
+permissions_roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/permissions_roles.yml
+END
+filter_sets.yml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/filter_sets.yml
+END
+roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/roles.yml
+END
+filter_prefs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/filter_prefs.yml
+END
+filter_params.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/filter_params.yml
+END
+configurations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/configurations.yml
+END
+reports.yml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/reports.yml
+END
+tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/tags.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/users.yml
+END
+taggings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/taggings.yml
+END
+roles_users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/roles_users.yml
+END
+dashboard_reports.yml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/dashboard_reports.yml
+END
+report_queries.yml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/report_queries.yml
+END
+user_dashboards.yml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/user_dashboards.yml
+END
+dashboards.yml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/dashboards.yml
+END
+report_links.yml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/report_links.yml
+END
+permissions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/permissions.yml
+END
+data_sources.yml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/data_sources.yml
+END
+queries.yml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/queries.yml
+END
+data_segments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/base_akim/data_segments.yml
+END

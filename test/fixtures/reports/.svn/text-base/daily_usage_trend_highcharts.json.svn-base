@@ -1,0 +1,28 @@
+{
+    "chart": {
+        "zoomType": "xy"
+    },
+    "xAxis": {
+        "type": "datetime",
+        "tickInterval": 10800000,
+        "dateTimeLabelFormats": {
+            "day":"%H:%M"
+        }
+    },
+    "yAxis": {
+        "title": {
+            "text": "Average Data uploaded and downloaded" 
+        } 
+    },
+    "plotOptions": {
+        "area": {
+            "stacking": "normal",
+            "lineColor": "#666666",
+            "lineWidth": 1,
+            "marker": {
+                "lineWidth": 1,
+                "lineColor": "#666666" 
+            } 
+        } 
+    }
+}

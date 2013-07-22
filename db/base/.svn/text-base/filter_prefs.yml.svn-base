@@ -1,0 +1,316 @@
+
+--- 
+filter_prefs: 
+  columns: 
+  - id
+  - filter_param_id
+  - optionable_id
+  - optionable_type
+  - values
+  - created_at
+  - updated_at
+  - start_date
+  - end_date
+  - period
+  - selected
+  - filter_enabled
+  - enable_email
+  - alert_direction
+  - name
+  - target
+  - user_id
+  records: 
+  - - 2
+    - 2
+    - 1
+    - DashboardReport
+    - 
+    - 2011-06-06 08:30:09 Z
+    - 2011-07-06 00:07:33 Z
+    - 2011-05-01 00:00:00 Z
+    - 2011-06-30 00:00:00 Z
+    - 31557600
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 2
+  - - 3
+    - 3
+    - 1
+    - DashboardReport
+    - 
+    - 2011-06-06 12:03:27 Z
+    - 2011-07-08 22:46:05 Z
+    - 
+    - 
+    - 
+    - 3GDevice
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 2
+  - - 4
+    - 4
+    - 1
+    - DashboardReport
+    - |
+      --- !map:ActiveSupport::HashWithIndifferentAccess 
+      Dell: "1"
+      Sierra Wireless, Inc.: "1"
+
+    - 2011-06-06 13:11:13 Z
+    - 2011-07-05 19:13:22 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 2
+  - - 6
+    - 5
+    - 1
+    - DashboardReport
+    - |
+      --- !map:ActiveSupport::HashWithIndifferentAccess 
+      foo1: "0"
+      foo2: "0"
+
+    - 2011-06-07 06:11:39 Z
+    - 2011-07-05 19:13:22 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 2
+  - - 8
+    - 6
+    - 11
+    - Report
+    - 
+    - 2011-06-08 22:55:05 Z
+    - 2011-07-05 22:05:18 Z
+    - 
+    - 
+    - 31557600
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 14
+    - 8
+    - 16
+    - Report
+    - 
+    - 2011-06-17 00:41:50 Z
+    - 2011-07-06 21:58:55 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - true
+    - 1
+    - Active License
+    - "1000"
+    - 
+  - - 18
+    - 1
+    - 4
+    - Report
+    - 
+    - 2011-06-27 21:05:14 Z
+    - 2011-06-27 21:05:14 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 19
+    - 2
+    - 3
+    - Report
+    - 
+    - 2011-06-27 21:14:14 Z
+    - 2011-06-27 21:14:14 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 20
+    - 3
+    - 3
+    - Report
+    - 
+    - 2011-06-27 21:14:14 Z
+    - 2011-07-21 00:41:39 Z
+    - 
+    - 
+    - 
+    - ""
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 21
+    - 4
+    - 3
+    - Report
+    - |
+      --- !map:ActiveSupport::HashWithIndifferentAccess 
+      Dell: "0"
+      Sierra Wireless, Inc.: "0"
+
+    - 2011-06-27 21:14:14 Z
+    - 2011-06-27 21:14:14 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 22
+    - 5
+    - 3
+    - Report
+    - |
+      --- !map:ActiveSupport::HashWithIndifferentAccess 
+      foo1: "0"
+      foo2: "0"
+
+    - 2011-06-27 21:14:14 Z
+    - 2011-06-27 21:14:14 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 23
+    - 7
+    - 1
+    - Report
+    - 
+    - 2011-06-27 23:48:31 Z
+    - 2011-06-27 23:48:31 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 41
+    - 9
+    - 16
+    - Report
+    - 
+    - 2011-07-06 21:40:45 Z
+    - 2011-07-06 21:58:55 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 0
+    - Throughput Per Day
+    - "10000000"
+    - 
+  - - 42
+    - 10
+    - 16
+    - Report
+    - 
+    - 2011-07-06 21:45:35 Z
+    - 2011-07-06 21:58:15 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 1
+    - Technology Average Signal Strength
+    - "62"
+    - 
+  - - 57
+    - 11
+    - 1
+    - FilterSet
+    - 
+    - 2011-07-21 07:13:21 Z
+    - 2011-07-21 07:13:21 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 
+  - - 58
+    - 12
+    - 1
+    - FilterSet
+    - |
+      --- !map:ActiveSupport::HashWithIndifferentAccess 
+      WiFiDevice: "0"
+      4GDevice: "0"
+      EthernetDevice: "0"
+      3GDevice: "0"
+
+    - 2011-07-21 07:13:21 Z
+    - 2011-07-21 07:13:21 Z
+    - 
+    - 
+    - 
+    - 
+    - false
+    - false
+    - 
+    - 
+    - 
+    - 

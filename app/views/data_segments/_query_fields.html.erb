@@ -1,0 +1,7 @@
+<div class="nested-fields">
+  <%= f.input :name %>
+  <%= f.input :query_string, :input_html => { :rows => 10, :cols => 80 } %>
+  <%= f.input :store_in_db, :as => :boolean %>
+  <%= f.input :sample_data, :input_html => { :rows => 5, :cols => 80 } %>
+  <%= link_to_remove_association "remove query", f %>
+</div>

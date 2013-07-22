@@ -1,0 +1,12 @@
+{
+    "chart": {
+        "plotShadow": "false"
+    },
+    "title": {
+        "text": "Device usage over past week" 
+    },
+    "plotOptions": {
+        "allowPointSelect": "true",
+        "cursor": "pointer"
+    }
+}

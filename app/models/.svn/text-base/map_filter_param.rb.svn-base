@@ -1,0 +1,2 @@
+class MapFilterParam < FilterParam
+end

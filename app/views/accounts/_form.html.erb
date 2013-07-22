@@ -1,0 +1,14 @@
+<%= simple_form_for @user, :url => account_path do |form| %>
+  <%- # TODO fix password fields   %>
+  <div class="col-1">
+    <%= form.input :first_name %>
+    <%= form.input :last_name %>
+    <%= form.input :email %>
+  </div>
+  <div class="col-2">
+	<%= form.input :password %>
+	<%= form.input :password_confirmation %>
+  </div>
+  <%= render :partial => 'shared/dialog_footer',
+             :locals => { :form => form, :cancel_path => account_path } %>
+<% end %>

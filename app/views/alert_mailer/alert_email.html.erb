@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+
+<p><%= @user.name %>,</p>
+
+<p>
+  The following KPIs have exceeded their threshold:
+</p>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Actual</th>
+    <th>Target</th>
+    <th>Change</th>
+    <th>Dashboard</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @kpi_results.each do |kpi_result| %>
+    <tr>
+      <td><%= kpi_result.kpi_pref.name %></td>
+      <td><%= kpi_result.last_float_value %></td>
+      <td><%= kpi_result.target_float %></td>
+      <%- # TODO wrap pretty change into a helper method %>
+      <td><%= "#{kpi_result.change.round(1)}%" %></td>
+      <%- # TODO make as link %>
+      <td>
+        <%- dashboard = kpi_result.kpi_pref.optionable.dashboard %>
+        <%= link_to dashboard.name, dashboard_url(dashboard) %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<p>
+  Regards,<br/>
+  Smith Micro Analytics
+</p>
+
+</body>
+</html>

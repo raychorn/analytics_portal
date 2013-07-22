@@ -1,0 +1,37 @@
+{
+    "chart": {
+        "zoomType": "xy"
+    },
+    "xAxis": {
+        "text": "Frequency/hr",
+        "min": 0
+    },
+    "yAxis": {
+        "title": {
+            "text": "% Users Effected",
+            "min": 0,
+            "max": 100,
+            "tickInterval": 10
+        }
+    },
+    "plotOptions": {
+        "scatter": {
+            "marker": {
+                "radius": "5",
+                "states": {
+                    "hover": {
+                        "enabled": "true",
+                        "lineColor": "rgb(250,250,100)"
+                    }
+                }
+            },
+            "states": {
+                "hover": {
+                    "marker": {
+                        "enabled": "false"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+SELECT (avg_141+avg_142) AS sum_avg_141_142, concat(year,"-",month) AS server_date
+FROM #HIVE_PARENT_TABLE
+WHERE c_159=1
+{and_date_range_by_month};

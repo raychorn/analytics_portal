@@ -1,0 +1,9 @@
+id,name,description,data_source_id,properties
+1,Weekly Usage Trend,NULL,1,NULL
+2,Error Scatterplot,NULL,1,NULL
+3,Error Report,NULL,1,NULL
+4,Data by Technology,NULL,1,"{ ""start_date_month"": ""2010-01"", ""end_date_month"": ""2010-02""}"
+5,Daily Usage Trend,NULL,1,NULL
+6,Licensing Report,NULL,1,NULL
+7,Usage Trend,NULL,1,NULL
+8,Device Usage,NULL,1,NULL

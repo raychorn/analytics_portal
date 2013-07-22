@@ -1,0 +1,22 @@
+<div class="dialog">
+  <h1>Select a Report Type</h1>
+
+  <div class="dialog-content">
+    <div class="col-a">
+    <%= link_to 'New Chart Report', new_chart_report_path %>
+    <br/>
+    <%= link_to 'New Table Report', new_table_report_path %>
+    <br/>
+    <%= link_to 'New Heat Map Report', new_heat_map_report_path %>
+    <br/>
+    <%= link_to 'New KPI Report', new_kpi_report_path %>
+    <br/>
+    </div>
+
+    <%= render :partial => 'shared/dialog_footer', :locals => {
+            :form => nil, :cancel_path => reports_path } %>
+
+  </div>
+  <div class="clear"></div>
+
+</div>

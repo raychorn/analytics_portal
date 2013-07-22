@@ -1,0 +1,15 @@
+
+--- 
+filter_sets: 
+  columns: 
+  - id
+  - name
+  - description
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - All Customers
+    - ""
+    - 2011-07-21 07:13:21 Z
+    - 2011-07-21 07:13:21 Z

@@ -1,0 +1,6 @@
+<div class="nested-fields">
+  <%= f.association :report, :as => :select, :collection => Report.all %>
+  <%= f.input :size, :as => :select, :collection => DashboardReport::Size.all %>
+  <%= f.input :position %>
+  <%= link_to_remove_association "unlink report", f %>
+</div>

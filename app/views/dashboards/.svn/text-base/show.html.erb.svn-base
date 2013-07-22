@@ -1,0 +1,24 @@
+<div id="content-main" class="dashboards">
+
+  <%= render :partial => 'shared/sub_nav_2', :locals => {:object_sym => :dashboard, :object => @dashboard, :objects => @dashboards, :hide_search => true} %>
+
+  <div id="content-body">
+    <div id="dashboard-section-1">
+      <% if @dashboard.dashboard_reports.present? %>
+        <% @dashboard.dashboard_reports.order("position ASC").each do |dash_rep| %>
+          <%- rep = dash_rep.report %>
+          <% if rep %>
+            <%= div_for rep, :class => (dash_rep.size ? "#{dash_rep.size}-report" : nil) do %>
+              <%= render_report rep, :partial => 'display_data', :locals => {:report => rep, :filter_prefs => dash_rep.filter_prefs} %>
+              <%= link_to '', edit_dashboard_report_path(dash_rep), :class => 'edit-button', :title => 'Edit' %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% else %>
+        Please add reports to this dashboard
+      <% end %>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>

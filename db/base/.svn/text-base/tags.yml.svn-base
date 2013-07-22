@@ -1,0 +1,17 @@
+
+--- 
+tags: 
+  columns: 
+  - id
+  - name
+  records: 
+  - - 1
+    - Customer Profiling
+  - - 2
+    - Error Management
+  - - 3
+    - Network Performance
+  - - 4
+    - Heat Map
+  - - 5
+    - My Reports

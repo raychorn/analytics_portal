@@ -1,0 +1,60 @@
+<%- # requires columns, which is an array of symbols   %>
+<%- column_pairs = (columns.first.respond_to?(:each) ? columns : columns.collect { |col| [col, col.to_s.titleize] }) %>
+<%- object_string = object_sym.to_s %>
+<%- objects_string = object_sym.to_s.pluralize %>
+<%- objects_sym = objects_string.to_sym %>
+<%- actions ||= [:show, :edit, :destroy] %>
+<%- hide_search ||= false %>
+<%- hide_action ||= false %>
+
+<%= render :partial => 'shared/sub_nav_2', :locals => {
+        :object_sym => object_sym, :objects => objects, :hide_search => hide_search,
+        :hide_action => hide_action, :klass_display_name => klass_display_name } %>
+
+<div id="content-main">
+  <div id="content-body">
+    <table class="combo-table">
+      <thead>
+      <tr>
+        <% column_pairs.each do |col| %>
+          <th><%= sortable object_sym, col.first, col.last %></th>
+        <% end %>
+        <th colspan=4 class="actions">Actions</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% objects.each_with_index do |obj, i_row| %>
+        <tr class="<%= 'odd' if i_row.odd? %>">
+          <% column_pairs.each do |col| %>
+            <td><%= obj.send(col.first) %></td>
+          <% end %>
+          <% if actions.include?(:start) %>
+            <td class="start">
+                <%= link_to '', polymorphic_path(obj, :action => :start), :title => 'Start' %>
+            </td>
+          <% end %>
+          <% if actions.include?(:show) && (can? :show, obj) %>
+            <td class="show">
+              <%= link_to 'Show', obj, :title => 'Show' %>
+            </td>
+          <% end %>
+
+          <% if actions.include?(:edit) && (can? :edit, obj) %>
+            <td class="edit">
+              <%= link_to '', edit_polymorphic_path(obj), :title => 'Edit' %>
+            </td>
+          <% end %>
+          <% if actions.include?(:destroy) && (can? :destroy, obj) %>
+            <td class="destroy">
+              <%= link_to '', obj, :confirm => 'Are you sure?', :method => :delete, :title => 'Delete' %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+      </tbody>
+
+    </table>
+    <%= will_paginate objects %>
+  </div>
+</div>

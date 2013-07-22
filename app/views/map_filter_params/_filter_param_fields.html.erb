@@ -1,0 +1,9 @@
+<div class="nested-fields">
+  <%= f.input :filter_param_type, :as => :hidden %>
+
+  <%= f.input :enable_for_filter_sets %>
+
+  <% if !report.nil? %>
+    <%= link_to_remove_association "remove filter param", f %>
+  <% end %>
+</div>

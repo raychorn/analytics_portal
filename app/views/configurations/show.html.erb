@@ -1,0 +1,26 @@
+<div id="content-main">
+  <%= render :partial => 'shared/sub_nav_2', :locals => {
+          :object_sym => :configuration, :hide_search => true, :action => 'edit'} %>
+
+  <div id="content-body">
+
+    <table class="combo-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Default Language</th>
+        <th>Default Time Zone</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>&nbsp;<%= @configuration.name %></td>
+        <td><%= @configuration.locale %></td>
+        <td><%= @configuration.time_zone %></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

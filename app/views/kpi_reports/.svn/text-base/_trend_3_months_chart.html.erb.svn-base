@@ -1,0 +1,5 @@
+<%- # requires trend_elem_id %>
+
+<div id="<%= trend_elem_id %>" class="trend-graph">
+  ...
+</div>

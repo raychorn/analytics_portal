@@ -1,0 +1,13 @@
+/*body.bp {*/
+/*@include blueprint-print(true); }*/
+/* line 14, ../../../app/stylesheets/print.scss */
+#header,
+#footer,
+body.two-col #header,
+body.two-col #footer,
+.sub-nav-2,
+.debug,
+#footnotes_debug,
+body.two-col #content #content-main #sidebar {
+  display: none;
+}

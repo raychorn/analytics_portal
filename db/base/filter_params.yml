@@ -1,0 +1,53 @@
+
+--- 
+filter_params: 
+  columns: 
+  - id
+  - optionable_id
+  - filter_param_type
+  - column
+  - created_at
+  - updated_at
+  - default_period
+  - min_period
+  - values
+  - date_column
+  - default_name
+  - report_query_id
+  - interval
+  - optionable_type
+  - enable_dynamic_values
+  - dynamic_values_query_id
+  records: 
+  - - 11
+    - 
+    - check_boxes
+    - device_model
+    - 2011-07-21 07:11:59 Z
+    - 2011-07-21 07:11:59 Z
+    - 604800
+    - 604800
+    - ""
+    - 
+    - 
+    - 
+    - 
+    - 
+    - true
+    - 79
+  - - 12
+    - 
+    - check_boxes
+    - device_type
+    - 2011-07-21 07:12:47 Z
+    - 2011-07-21 07:12:47 Z
+    - 604800
+    - 604800
+    - "[\"3GDevice\", \"4GDevice\", \"WiFiDevice\", \"EthernetDevice\"]"
+    - 
+    - 
+    - 
+    - 
+    - 
+    - false
+    - 

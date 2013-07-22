@@ -1,0 +1,92 @@
+<div id="content-main">
+
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Start', start_data_segment_path %>
+
+<p>
+  <b>Name:</b>
+  <%= @data_segment.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @data_segment.job_runners_status %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @data_segment.description %>
+</p>
+
+<p>
+  <b>Data source:</b>
+  <%= @data_segment.data_source_id %>
+</p>
+
+<p>
+  <b>Schedule:</b>
+  <%= @data_segment.schedule %>
+</p>
+
+<p>
+  <b>Enable Schedule:</b>
+  <%= @data_segment.enable_schedule %>
+</p>
+
+<p>
+  <b>Properties:</b>
+  <%= @data_segment.properties %>
+</p>
+
+<p>
+  <b>Queries:</b>
+  <% if @data_segment.queries.present? %>
+    <% @data_segment.queries.each do |query| %>
+      <table class='queries'>
+        <tr><td>query id:</td><td><%= query.id %></td></tr>
+        <tr><td>query name:</td><td><%= query.name %></td></tr>
+        <tr><td>token replaced query string:</td><td><%= query.token_replaced_hive_query_string %></td></tr>
+        <tr><td>sample data:</td><td><%= query.sample_data %></td></tr>
+        <tr><td>store in db:</td><td><%= query.store_in_db %></td></tr>
+        <tr><td>query result id:</td><td><%= "#{query.query_result_id} (results_#{query.query_result_id})" %></td></tr>
+        <tr>
+          <td>results<br/> (limit 50):</td>
+          <td>
+            <table>
+
+              <%- begin %>
+                <%- result_set = query.filtered_results(
+                        nil, nil, :sql_string => 'SELECT * FROM {table_name} LIMIT 50'
+                ).try(:result_set) %>
+              <%- rescue %>
+                <%- result_set = nil %>
+              <% end %>
+
+              <tr>
+                <% result_set.try(:column_names).try(:each) do |col| %>
+                  <th><%= col.to_s %></th>
+                <% end %>
+              </tr>
+
+              <% result_set.try(:results).try(:each) do |row| %>
+                <tr>
+                  <% result_set.try(:column_names).try(:each) do |col| %>
+                    <td><%= result_set.value_at(row, col) %></td>
+                  <% end %>
+                </tr>
+              <% end %>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br/>
+    <% end %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_data_segment_path(@data_segment) %> |
+<%= link_to 'Back', data_segments_path %>
+
+</div>

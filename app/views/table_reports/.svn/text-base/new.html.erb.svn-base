@@ -1,0 +1,9 @@
+<div class="dialog">
+
+  <h1>New Table Report</h1>
+
+  <%= render 'table_reports/form' %>
+
+  <div class="clear"></div>
+
+</div>

@@ -1,0 +1,17 @@
+
+--- 
+user_dashboards: 
+  columns: 
+  - id
+  - user_id
+  - dashboard_id
+  - created_by
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2
+    - 1
+    - 
+    - 2011-05-29 07:46:31 Z
+    - 2011-05-29 07:46:31 Z

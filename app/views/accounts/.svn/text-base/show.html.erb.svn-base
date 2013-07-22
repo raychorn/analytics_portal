@@ -1,0 +1,26 @@
+<div id="content-main">
+
+<%= render :partial => 'shared/sub_nav_2', :locals => {
+        :object_sym => :account, :hide_search => true, :action => 'edit', :object_klass => User } %>
+
+<table class="combo-table">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Mobile Phone</th>
+    <th>Language</th>
+    <th>Time Zone</th>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<%= @user.name %></td>
+    <td><%= @user.email %></td>
+    <td>********</td>
+    <td>TODO</td>
+    <td>TODO</td>
+    <td>TODO</td>
+  </tr>
+</table>
+
+</div>

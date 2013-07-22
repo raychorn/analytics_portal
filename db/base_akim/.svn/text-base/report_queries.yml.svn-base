@@ -1,0 +1,701 @@
+
+--- 
+report_queries: 
+  columns: 
+  - id
+  - report_id
+  - query_id
+  - created_at
+  - updated_at
+  - chart_type
+  - chart_params
+  - x_column
+  - y_column
+  - radius_column
+  - name_column
+  - query_select_group
+  - sql_string
+  - y_axis
+  records: 
+  - - 1
+    - 1
+    - 13
+    - 2011-05-27 00:51:12 Z
+    - 2011-05-29 20:28:10 Z
+    - line
+    - |-
+      {
+      "color": "#21415E"
+      }
+    - ""
+    - connections_per_day
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT day_of_weeks.name, (SUM(h.conn_per_day_wifi) + SUM(h.conn_per_day_cdma) + SUM(h.conn_per_day_wimax) + SUM(h.conn_per_day_ethernet)) as connections_per_day
+      FROM day_of_weeks
+      LEFT JOIN {table_name} AS h
+      ON day_of_weeks.name = h.day_of_week
+      GROUP BY day_of_weeks.name
+      ORDER BY day_of_weeks.id
+    - 0
+  - - 2
+    - 1
+    - 22
+    - 2011-05-27 00:51:12 Z
+    - 2011-05-29 20:28:10 Z
+    - area
+    - |-
+      {
+      "color": "#8DAF17"
+      }
+    - ""
+    - sum_avg_upload_download
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT day_of_weeks.name, h.sum_avg_upload_download AS sum_avg_upload_download 
+      FROM day_of_weeks
+      LEFT JOIN {table_name} AS h
+      ON day_of_weeks.name = h.day_of_week
+      GROUP BY day_of_weeks.name
+      ORDER BY day_of_weeks.id
+    - 1
+  - - 4
+    - 2
+    - 54
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:30:23 Z
+    - scatter
+    - |-
+      {
+      "color": "#F89A2D"
+      }
+    - frequency_per_hour
+    - percent_user_affected
+    - percent_user_affected
+    - description
+    - ""
+    - SELECT CONCAT_WS(', ', error_code, error_msg, device_type, '<br/>') AS description, error_code, percent_user_affected, frequency_per_hour FROM {table_name}
+    - 0
+  - - 6
+    - 3
+    - 34
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:41:39 Z
+    - line
+    - |-
+      {
+      "color": "#21415E"
+      }
+    - c_date
+    - conn_per_day
+    - ""
+    - ""
+    - ""
+    - |
+      SELECT (SUM(conn_per_day_wifi) + SUM(conn_per_day_cdma) + SUM(conn_per_day_wimax) + SUM(conn_per_day_ethernet)) AS conn_per_day, device_type, manufacturer, device_model, c_date
+      FROM {table_name}
+      {where_filter}
+      GROUP BY c_date
+
+    - 0
+  - - 8
+    - 4
+    - 18
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:32:47 Z
+    - area
+    - ""
+    - server_date
+    - sum_avg_upload_download_3g
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT sum_avg_upload_download AS sum_avg_upload_download_3g, server_date FROM {table_name} WHERE device_type = "3GDevice"
+      {and_filter};
+    - 0
+  - - 9
+    - 4
+    - 18
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:32:47 Z
+    - area
+    - ""
+    - server_date
+    - sum_avg_upload_download_ethernet
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT sum_avg_upload_download AS sum_avg_upload_download_ethernet, server_date FROM {table_name} WHERE device_type = "EthernetDevice"
+      {and_filter};
+    - 0
+  - - 10
+    - 5
+    - 5
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-28 16:34:56 Z
+    - line
+    - |
+      {
+      "color": "#21415E"
+      }
+
+    - hour
+    - connections_per_hour
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT (conn_per_hour_wifi + conn_per_hour_cdma + conn_per_hour_wimax + conn_per_hour_ethernet) AS connections_per_hour, hour
+      FROM {table_name}
+      GROUP BY hour;
+    - 0
+  - - 11
+    - 5
+    - 24
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-28 16:35:29 Z
+    - area
+    - |-
+      {
+      "color": "#8DAF17"
+      }
+    - hour
+    - sum_avg_upload_download
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT sum_avg_upload_download, hour
+      FROM {table_name}
+      GROUP BY hour;
+    - 1
+  - - 17
+    - 7
+    - 25
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:36:07 Z
+    - pie
+    - ""
+    - device_model
+    - device_usage_percentage
+    - ""
+    - ""
+    - ""
+    - SELECT (SUM(percent_uuid) * 100) as device_usage_percentage, device_model FROM {table_name} WHERE device_model != '' GROUP BY device_model;
+    - 0
+  - - 18
+    - 8
+    - 38
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-21 00:30:05 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT error_code, error_msg, device_type AS connection_type, SUM(percent_user_affected) AS percent_user_affected, SUM(frequency_per_hour) AS frequency_per_hour, SUM(total_cnt_error) AS total_cnt_error
+      FROM {table_name}
+      {where_filter}
+      GROUP BY error_code, device_type
+    - 0
+  - - 19
+    - 9
+    - 27
+    - 2011-05-28 07:01:42 Z
+    - 2011-05-29 00:50:51 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - SELECT connection_type, SUM(conn_per_day_wifi) AS conn_per_day, SUM(failed_conn_per_day_wifi) AS failed_conn_per_day, SUM(dropped_per_day) as dropped_per_day, AVG(avg_time_conn_per_day_wifi) AS avg_time_conn_per_day, AVG(avg_time_conn_per_session_wifi) AS avg_time_conn_per_session, AVG(avg_downloaded_per_day) AS avg_downloaded_per_day, AVG(avg_uploaded_per_day) AS avg_uploaded_per_day, AVG(avg_download_speed_wifi) AS avg_download_speed, AVG(avg_upload_speed_wifi) AS avg_upload_speed, AVG(avg_signal_strength_wifi) AS avg_signal_strength FROM {table_name} WHERE connection_type = 'WiFiDevice' GROUP BY connection_type
+    - 0
+  - - 20
+    - 9
+    - 27
+    - 2011-05-28 20:33:55 Z
+    - 2011-05-29 00:50:51 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - SELECT connection_type, SUM(conn_per_day_ethernet) AS conn_per_day, SUM(dropped_per_day) AS dropped_per_day, AVG(avg_time_conn_per_day_ethernet) AS avg_time_conn_per_day, AVG(avg_time_conn_per_session_ethernet) AS avg_time_conn_per_session, AVG(avg_downloaded_per_day) AS avg_downloaded_per_day, avg_uploaded_per_day, AVG(avg_download_speed_ethernet) AS avg_download_speed, AVG(avg_upload_speed_ethernet) AS avg_upload_speed, AVG(avg_signal_strength_ethernet) AS avg_signal_strength FROM {table_name} WHERE connection_type = 'EthernetDevice' GROUP BY connection_type
+    - 0
+  - - 21
+    - 9
+    - 27
+    - 2011-05-28 20:36:35 Z
+    - 2011-05-29 00:51:27 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - SELECT connection_type, SUM(conn_per_day_cdma) AS conn_per_day, SUM(failed_conn_per_day_wwan) AS failed_conn_per_day, SUM(dropped_per_day) AS dropped_per_day, AVG(avg_time_conn_per_day_cdma) AS avg_time_conn_per_day, AVG(avg_time_conn_per_session_cdma) AS avg_time_conn_per_session, AVG(avg_downloaded_per_day) AS avg_downloaded_per_day, AVG(avg_uploaded_per_day) AS avg_uploaded_per_day, AVG(avg_download_speed_cdma) AS avg_download_speed, AVG(avg_upload_speed_cdma) AS avg_upload_speed, AVG(avg_signal_strength_cdma) AS avg_signal_strength FROM {table_name} WHERE connection_type = '3GDevice' GROUP BY connection_type
+    - 0
+  - - 22
+    - 9
+    - 27
+    - 2011-05-28 20:37:25 Z
+    - 2011-05-29 00:50:51 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - SELECT connection_type, SUM(conn_per_day_wimax) AS conn_per_day, SUM(failed_conn_per_day_wimax) AS failed_conn_per_day, SUM(dropped_per_day) AS dropped_per_day, AVG(avg_time_conn_per_day_wimax) AS avg_time_conn_per_day, AVG(avg_time_conn_per_session_wimax) AS avg_time_conn_per_session, AVG(avg_downloaded_per_day) AS avg_downloaded_per_day, AVG(avg_uploaded_per_day) AS avg_uploaded_per_day, AVG(avg_download_speed_wimax) AS avg_download_speed, AVG(avg_upload_speed_wimax) AS avg_upload_speed, AVG(avg_signal_strength_wimax) AS avg_signal_strength FROM {table_name} WHERE connection_type = '4GDevice' GROUP BY connection_type
+    - 0
+  - - 23
+    - 10
+    - 29
+    - 2011-05-28 21:19:00 Z
+    - 2011-07-21 00:31:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT device_type as connection_type, SUM(conn_attempts_wifi) AS conn_per_day, SUM(throughput_per_day) AS throughput_per_day, SUM(download_speed_wifi) AS avg_download_speed, AVG(signal_strength_percent_wifi) AS avg_signal_strength
+      FROM {table_name}
+      WHERE device_type = 'WiFiDevice'
+      GROUP BY device_type
+    - 0
+  - - 24
+    - 10
+    - 29
+    - 2011-05-28 21:30:53 Z
+    - 2011-07-21 00:31:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT device_type as connection_type, SUM(conn_attempts_ethernet) AS conn_per_day, SUM(throughput_per_day) AS throughput_per_day, AVG(download_speed_ethernet) AS avg_download_speed, AVG(signal_strength_percent_ethernet) AS avg_signal_strength
+      FROM {table_name}
+      WHERE device_type = 'EthernetDevice'
+      GROUP BY device_type
+    - 0
+  - - 25
+    - 10
+    - 29
+    - 2011-05-28 21:32:19 Z
+    - 2011-07-21 00:31:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT device_type as connection_type, SUM(conn_attempts_wimax) AS conn_per_day, SUM(throughput_per_day) AS throughput_per_day, AVG(download_speed_wimax) AS avg_download_speed, AVG(signal_strength_percent_wimax) AS avg_signal_strength
+      FROM {table_name}
+      WHERE device_type = '4GDevice'
+      GROUP BY device_type
+    - 0
+  - - 26
+    - 10
+    - 29
+    - 2011-05-28 21:34:07 Z
+    - 2011-07-21 00:31:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT device_type as connection_type, SUM(conn_attempts_cdma) AS conn_per_day, SUM(throughput_per_day) AS throughput_per_day, AVG(download_speed_cdma) AS avg_download_speed, AVG(signal_strength_percent_cdma) AS avg_signal_strength
+      FROM {table_name}
+      WHERE device_type = '3GDevice'
+      GROUP BY device_type
+    - 0
+  - - 27
+    - 11
+    - 78
+    - 2011-05-29 02:55:52 Z
+    - 2011-07-21 00:37:13 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT manufacturer, device_model, AVG(share) AS user_share, SUM(device_user) AS sum_users, AVG(time_conn_per_day) AS avg_conn_time_per_day, AVG(data_upload_per_day) AS avg_data_upload_per_day, AVG(data_download_per_day) AS avg_data_download_per_day, AVG(avg_peek_download_speed) AS avg_peak_download_speed, AVG(avg_peek_upload_speed) AS avg_peak_upload_speed
+      FROM {table_name}
+      {where_filter}
+      GROUP BY manufacturer, device_model
+    - 0
+  - - 29
+    - 13
+    - 75
+    - 2011-05-29 03:06:48 Z
+    - 2011-07-21 00:37:45 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT manufacturer, device_model, AVG(share) AS user_share, AVG(time_conn_per_day) AS avg_time_conn_per_day, AVG(data_download_per_day + data_upload_per_day) AS avg_throughput_per_day
+      FROM {table_name}
+      GROUP BY manufacturer, device_model
+    - 0
+  - - 30
+    - 3
+    - 36
+    - 2011-05-29 03:58:20 Z
+    - 2011-07-21 00:38:35 Z
+    - area
+    - |-
+      {
+      "color": "#8DAF17"
+      }
+    - c_date
+    - sum_avg_upload_download
+    - ""
+    - ""
+    - ""
+    - |
+      SELECT SUM(sum_avg_upload_download) AS sum_avg_upload_download, device_type, manufacturer, device_model, c_date
+      FROM {table_name}
+      {where_filter}
+      GROUP BY c_date
+
+    - 1
+  - - 31
+    - 14
+    - 41
+    - 2011-05-29 06:40:57 Z
+    - 2011-05-29 06:40:57 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT error_code, error_msg, SUM(percent_user_affected) AS percent_user_affected, SUM(frequency_per_hour) AS frequency_per_hour
+      FROM {table_name}
+      GROUP BY error_code
+    - 0
+  - - 32
+    - 4
+    - 18
+    - 2011-06-06 08:00:05 Z
+    - 2011-07-21 00:32:47 Z
+    - area
+    - ""
+    - server_date
+    - sum_avg_upload_download_wifi
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT sum_avg_upload_download AS sum_avg_upload_download_wifi, server_date FROM {table_name} WHERE device_type = "WiFiDevice"
+      {and_filter};
+    - 0
+  - - 33
+    - 4
+    - 18
+    - 2011-06-06 08:01:19 Z
+    - 2011-07-21 00:32:47 Z
+    - area
+    - ""
+    - server_date
+    - sum_avg_upload_download_4g
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT sum_avg_upload_download AS sum_avg_upload_download_4g, server_date FROM {table_name} WHERE device_type = "4GDevice"
+      {and_filter};
+    - 0
+  - - 34
+    - 15
+    - 61
+    - 2011-06-07 21:26:19 Z
+    - 2011-07-06 20:55:13 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT devicetype, heat_lat, heat_lng, heat_x, heat_y, heat_num, SUM(sum_conn_attempts) AS sum_conn_attempts
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 35
+    - 16
+    - 44
+    - 2011-06-14 10:26:45 Z
+    - 2011-07-06 21:56:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT SUM(cnt_current_total) AS cnt_current_total, server_date
+      FROM {table_name}
+      GROUP BY server_date
+      ORDER BY server_date ASC
+    - 0
+  - - 36
+    - 5
+    - 52
+    - 2011-06-27 23:19:40 Z
+    - 2011-07-07 01:06:27 Z
+    - line
+    - |-
+      {
+      "color": "red"
+      }
+    - hour
+    - failure_rate
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT (failure_rate_wifi + failure_rate_wwan + failure_rate_wimax + failure_rate_ethernet) AS failure_rate, hour
+      FROM {table_name}
+      GROUP BY hour;
+    - 2
+  - - 37
+    - 3
+    - 48
+    - 2011-06-27 23:44:01 Z
+    - 2011-07-21 00:38:35 Z
+    - line
+    - |-
+      {
+      "color": "red"
+      }
+    - c_date
+    - failure_rate
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT (failure_rate_wifi + failure_rate_wwan + failure_rate_wimax + failure_rate_ethernet) AS failure_rate, c_date
+      FROM {table_name}
+      {where_filter}
+      GROUP BY c_date
+    - 2
+  - - 38
+    - 1
+    - 50
+    - 2011-06-27 23:48:31 Z
+    - 2011-06-27 23:48:31 Z
+    - line
+    - |-
+      {
+      "color": "red"
+      }
+    - ""
+    - failure_rate
+    - ""
+    - ""
+    - ""
+    - |-
+      SELECT day_of_weeks.name, (h.failure_rate_wifi + h.failure_rate_wwan + h.failure_rate_wimax + h.failure_rate_ethernet) AS failure_rate
+      FROM day_of_weeks
+      LEFT JOIN {table_name} AS h
+      ON day_of_weeks.name = h.day_of_week
+      GROUP BY day_of_weeks.name
+      ORDER BY day_of_weeks.id
+    - 2
+  - - 39
+    - 17
+    - 66
+    - 2011-07-06 21:20:13 Z
+    - 2011-07-06 21:20:13 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, connections
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 40
+    - 16
+    - 63
+    - 2011-07-06 21:40:26 Z
+    - 2011-07-06 21:56:50 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT SUM(throughput_per_day) AS throughput_per_day, AVG(avg_signal_strength_percent) AS avg_signal_strength_percent, server_date
+      FROM {table_name}
+      GROUP BY server_date
+      ORDER BY server_date ASC
+    - 0
+  - - 42
+    - 6
+    - 12
+    - 2011-07-06 22:17:41 Z
+    - 2011-07-06 22:17:41 Z
+    - bar
+    - ""
+    - ""
+    - foo
+    - ""
+    - ""
+    - ""
+    - ""
+    - 0
+  - - 43
+    - 18
+    - 67
+    - 2011-07-06 22:31:02 Z
+    - 2011-07-06 22:31:02 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, throughput
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 44
+    - 19
+    - 68
+    - 2011-07-06 22:45:54 Z
+    - 2011-07-06 22:45:54 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, throughput
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 45
+    - 20
+    - 69
+    - 2011-07-06 22:54:18 Z
+    - 2011-07-06 22:54:18 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, signal_strength
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 46
+    - 21
+    - 70
+    - 2011-07-06 22:58:39 Z
+    - 2011-07-06 22:58:39 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, peak_speed
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 47
+    - 22
+    - 71
+    - 2011-07-06 23:03:27 Z
+    - 2011-07-06 23:03:27 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, error_freq
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0
+  - - 48
+    - 23
+    - 72
+    - 2011-07-06 23:07:20 Z
+    - 2011-07-06 23:07:20 Z
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - |-
+      SELECT heat_lat, heat_lng, heat_x, heat_y, heat_num, num_failures
+      FROM {table_name}
+      GROUP BY heat_lat, heat_lng, heat_x, heat_y, heat_num
+      {and_filter}
+    - 0

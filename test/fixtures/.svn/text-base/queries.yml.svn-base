@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data_segment_id: 1
+  query_string: MyText
+  store_in_db: false
+
+two:
+  data_segment_id: 1
+  query_string: MyText
+  store_in_db: false

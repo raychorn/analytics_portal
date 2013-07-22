@@ -1,0 +1,6 @@
+<div class="dialog dashboard-report-dialog">
+
+  <h1>New Dashboard Report</h1>
+  <%= render 'form' %>
+
+</div>

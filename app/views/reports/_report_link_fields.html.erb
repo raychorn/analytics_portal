@@ -1,0 +1,7 @@
+<div class="nested-fields">
+  <%= f.input :name %>
+  <%= f.input :filter_columns, :hint => 'comma separated, optional' %>
+  <%= f.association :linked_report, :as => :select, :collection => Report.all %>
+
+  <%= link_to_remove_association "remove report link", f %>
+</div>

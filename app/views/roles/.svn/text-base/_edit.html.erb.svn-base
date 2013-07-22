@@ -1,0 +1,6 @@
+<div class="dialog role-dialog">
+
+  <h1>Edit Role</h1>
+  <%= render 'form' %>
+
+</div>

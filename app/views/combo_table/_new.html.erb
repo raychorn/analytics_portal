@@ -1,0 +1,10 @@
+<%- objects_string = object_sym.to_s.pluralize %>
+<%- objects_sym = objects_string.to_sym %>
+
+<div id="dialog">
+<h1>New <%= object_sym.to_s %></h1>
+
+<%= render :partial => 'combo_table/form', :locals => { :object => object, :object_sym => object_sym } %>
+
+<%= link_to 'Back', url_for(objects_sym) %>
+</div>

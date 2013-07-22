@@ -1,0 +1,16 @@
+Listen #{analytics_port}
+
+<VirtualHost *:#{analytics_port}>
+		ServerName #{analytics_load_balancer}
+		DocumentRoot "/var/www/analytics_portal/#{application}/current/public"
+
+		PassengerHighPerformance on
+		RailsSpawnMethod smart
+	
+		<Directory "/var/www/analytics_portal/#{application}/current/public">
+			Options -Indexes +FollowSymLinks
+			AllowOverride None
+			Order allow,deny
+			Allow from all
+		</Directory>
+</VirtualHost>

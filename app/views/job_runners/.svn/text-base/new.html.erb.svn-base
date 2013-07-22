@@ -1,0 +1,9 @@
+<div id="content-main">
+
+<h1>New job_runner</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', job_runners_path %>
+
+</div>

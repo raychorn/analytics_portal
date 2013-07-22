@@ -1,0 +1,5 @@
+first_name,last_name,email,password,password_confirmation
+portal,user,portal@analytics.local,portal,portal
+Sergei,Prutkin,sprutkin@smithmicro.com,bimmer,bimmer
+Tonya,Hernandez,THernandez2@smithmicro.com,huzzah,huzzah
+David,Terry,dterry@smithmicro.com,skippy,skippy

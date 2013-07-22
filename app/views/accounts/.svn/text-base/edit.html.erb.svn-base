@@ -1,0 +1,6 @@
+<div class="dialog user-dialog">
+  
+<h1>Edit Account</h1>
+<%= render 'form' %>
+
+</div>

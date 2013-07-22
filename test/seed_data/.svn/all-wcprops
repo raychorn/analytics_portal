@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data
+END
+report_queries.csv
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/report_queries.csv
+END
+data_sources.csv
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/data_sources.csv
+END
+queries.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/queries.csv
+END
+data_segments.csv
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/data_segments.csv
+END
+reports.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/reports.csv
+END
+users.csv
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/test/seed_data/users.csv
+END

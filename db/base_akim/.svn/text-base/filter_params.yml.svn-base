@@ -1,0 +1,213 @@
+
+--- 
+filter_params: 
+  columns: 
+  - id
+  - optionable_id
+  - filter_param_type
+  - column
+  - created_at
+  - updated_at
+  - default_period
+  - min_period
+  - values
+  - date_column
+  - default_name
+  - report_query_id
+  - interval
+  - optionable_type
+  - enable_dynamic_values
+  - dynamic_values_query_id
+  records: 
+  - - 1
+    - 4
+    - month_date
+    - server_date
+    - 2011-05-31 14:28:48 Z
+    - 2011-06-27 21:05:14 Z
+    - 31557600
+    - 31557600
+    - ""
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 2
+    - 3
+    - day_date
+    - c_date
+    - 2011-06-06 08:29:40 Z
+    - 2011-06-27 21:14:14 Z
+    - 31557600
+    - 31557600
+    - ""
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 3
+    - 3
+    - connection_type
+    - device_type
+    - 2011-06-06 08:48:17 Z
+    - 2011-07-21 00:39:10 Z
+    - 604800
+    - 604800
+    - ""
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 4
+    - 3
+    - check_boxes
+    - manufacturer
+    - 2011-06-06 12:46:49 Z
+    - 2011-06-27 21:14:14 Z
+    - 604800
+    - 604800
+    - "[\"Sierra Wireless, Inc.\", \"Dell\"]"
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 5
+    - 3
+    - check_boxes
+    - device_model
+    - 2011-06-07 06:08:33 Z
+    - 2011-07-21 00:39:10 Z
+    - 604800
+    - 604800
+    - "[\"foo1\", \"foo2\"]"
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 6
+    - 11
+    - day_date
+    - ds
+    - 2011-06-07 19:42:50 Z
+    - 2011-07-07 07:17:05 Z
+    - 31557600
+    - 604800
+    - ""
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 7
+    - 1
+    - day_date
+    - c_date
+    - 2011-06-08 22:34:17 Z
+    - 2011-06-27 23:48:31 Z
+    - 604800
+    - 604800
+    - ""
+    - ""
+    - ""
+    - 
+    - day
+    - 
+    - false
+    - 
+  - - 8
+    - 16
+    - kpi
+    - cnt_current_total
+    - 2011-06-14 10:33:34 Z
+    - 2011-07-06 21:40:26 Z
+    - 604800
+    - 604800
+    - ""
+    - server_date
+    - Active Licenses
+    - 35
+    - month
+    - 
+    - false
+    - 
+  - - 9
+    - 16
+    - kpi
+    - throughput_per_day
+    - 2011-07-06 21:40:26 Z
+    - 2011-07-06 21:40:45 Z
+    - 604800
+    - 604800
+    - ""
+    - server_date
+    - Technology Data Throughput Per Day
+    - 40
+    - month
+    - 
+    - false
+    - 
+  - - 10
+    - 16
+    - kpi
+    - avg_signal_strength_percent
+    - 2011-07-06 21:44:58 Z
+    - 2011-07-06 21:44:58 Z
+    - 604800
+    - 604800
+    - ""
+    - server_date
+    - Technology Average Signal Strength
+    - 40
+    - month
+    - 
+    - false
+    - 
+  - - 11
+    - 
+    - check_boxes
+    - device_model
+    - 2011-07-21 07:11:59 Z
+    - 2011-07-21 07:11:59 Z
+    - 604800
+    - 604800
+    - ""
+    - 
+    - 
+    - 
+    - 
+    - 
+    - true
+    - 79
+  - - 12
+    - 
+    - check_boxes
+    - device_type
+    - 2011-07-21 07:12:47 Z
+    - 2011-07-21 07:12:47 Z
+    - 604800
+    - 604800
+    - "[\"3GDevice\", \"4GDevice\", \"WiFiDevice\", \"EthernetDevice\"]"
+    - 
+    - 
+    - 
+    - 
+    - 
+    - false
+    - 

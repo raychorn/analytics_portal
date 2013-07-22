@@ -1,0 +1,46 @@
+<%= simple_form_for @report, :html => {:class => 'dev'} do |form| %>
+  <%= form.input :report_type, :as => :hidden %>
+  <%= form.input :name %>
+  <%= form.input :tag_list, :hint => '(separate by commas)' %>
+
+  <% if is_global_admin?(current_user) %>
+    <div class="col-4 global-admin">
+
+      <%= form.input :table_columns, :hint => '(separate by commas)' %>
+      <%= form.collection_radio :sample_option, Query::Sample.options, :first, :last %>
+
+      <div id="filter_params" class="sub-form">
+        <h3>Filter Params</h3>
+        <%= form.simple_fields_for :filter_params do |filter_param| %>
+          <%= render 'filter_param_fields', :f => filter_param %>
+        <% end %>
+        <div class="links">
+          <%= link_to_add_association 'create filter param', form, :filter_params %>
+        </div>
+      </div>
+
+      <div id="filter_prefs" class="sub-form">
+        <h3>Filter Prefs</h3>
+        <%= form.simple_fields_for :filter_prefs do |filter_prefs| %>
+          <%= render 'filter_pref_fields', :f => filter_prefs %>
+        <% end %>
+        <div class="links">
+          <%= link_to_add_association 'create filter pref', form, :filter_prefs %>
+        </div>
+      </div>
+
+      <div id="report_queries" class="sub-form">
+        <h3>Queries</h3>
+        <%= form.simple_fields_for :report_queries do |report_query| %>
+          <%= render 'report_query_fields', :f => report_query %>
+        <% end %>
+        <div class="links">
+          <%= link_to_add_association 'link query data', form, :report_queries %>
+        </div>
+      </div>
+
+    </div>
+  <% end %>
+
+  <%= form.button :submit %>
+<% end %>

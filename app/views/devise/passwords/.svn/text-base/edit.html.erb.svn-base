@@ -1,0 +1,22 @@
+<div class="dialog reset-password-dialog">
+  <h1>Reset Your Password</h1>
+
+  <%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => {:method => :post}) do |form| %>
+    <%= f.hidden_field :reset_password_token %>
+
+    <div class="dialog-content">
+      <%= devise_error_messages! %>
+      <%= form.input :password %>
+      <%= form.input :password_confirmation %>
+    </div>
+
+    <div class="footer">
+      <div class="options">
+        <%= render :partial => "devise/shared/links" %>
+      </div>
+      <%= form.button :submit, :value => "Reset" %>
+      <div class="clear"></div>
+    </div>
+
+  <% end %>
+</div>

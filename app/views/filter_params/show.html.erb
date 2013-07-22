@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @filter_param.type %>
+</p>
+
+<p>
+  <b>Column:</b>
+  <%= @filter_param.column %>
+</p>
+
+<p>
+  <b>Enable Dynamic Values:</b>
+<%= @filter_param.enable_dynamic_values %>
+</p>
+
+<p>
+  <b>(Static) Values:</b>
+  <%= @filter_param.values.inspect %>
+</p>
+
+<p>
+  <b>Dynamic Values:</b>
+  <%= @filter_param.dynamic_values.inspect %>
+</p>
+
+<%= link_to 'Edit', edit_filter_param_path(@filter_param) %> |
+<%= link_to 'Back', filter_params_path %>

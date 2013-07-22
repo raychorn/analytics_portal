@@ -1,0 +1,7 @@
+<%= simple_form_for @query do |form| %>
+  <%= form.input :name %>
+  <%= form.input :query_string, :input_html => { :rows => 5 } %>
+  <%= form.input :store_in_db %>
+  <%= form.input :sample_data %>
+<%= form.button :submit %>
+<% end %>

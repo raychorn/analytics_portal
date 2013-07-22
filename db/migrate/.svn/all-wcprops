@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repo1/!svn/ver/14341/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate
+END
+20110510224230_add_sql_string_to_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110510224230_add_sql_string_to_report_queries.rb
+END
+20101221180641_create_permission_role_join_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101221180641_create_permission_role_join_table.rb
+END
+20110606062349_add_min_period_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110606062349_add_min_period_to_filter_params.rb
+END
+20110824183949_add_map_columns_to_filter_prefs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110824183949_add_map_columns_to_filter_prefs.rb
+END
+20110407065721_add_highcharts_fields_to_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110407065721_add_highcharts_fields_to_report_queries.rb
+END
+20110501071727_add_query_select_group_to_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110501071727_add_query_select_group_to_report_queries.rb
+END
+20110606124147_add_values_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110606124147_add_values_to_filter_params.rb
+END
+20110610000402_add_schedule_to_data_segments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110610000402_add_schedule_to_data_segments.rb
+END
+20110522232908_add_position_to_dashboard.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110522232908_add_position_to_dashboard.rb
+END
+20110824175746_cleanup_unused_columns.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110824175746_cleanup_unused_columns.rb
+END
+20110317123314_create_data_sources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110317123314_create_data_sources.rb
+END
+20110831005530_add_region_to_filter_set2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo1/!svn/ver/14341/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110831005530_add_region_to_filter_set2.rb
+END
+20110205000352_create_role_user_join_table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110205000352_create_role_user_join_table.rb
+END
+20110505221146_add_filter_values_to_filter_pref.rb
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110505221146_add_filter_values_to_filter_pref.rb
+END
+20110317123612_create_data_segments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110317123612_create_data_segments.rb
+END
+20110401232032_add_database_name_to_data_sources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110401232032_add_database_name_to_data_sources.rb
+END
+20101228210908_create_user_dashboards.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101228210908_create_user_dashboards.rb
+END
+20101220171206_create_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101220171206_create_roles.rb
+END
+20110419201116_add_properties_to_data_segments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110419201116_add_properties_to_data_segments.rb
+END
+20110410044205_add_type_to_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110410044205_add_type_to_reports.rb
+END
+20110614101438_add_kpi_to_filter_prefs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110614101438_add_kpi_to_filter_prefs.rb
+END
+20110723013219_add_type_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110723013219_add_type_to_filter_params.rb
+END
+20110428091731_add_description_to_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110428091731_add_description_to_roles.rb
+END
+20110518102252_add_shared_to_dashboards.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110518102252_add_shared_to_dashboards.rb
+END
+20110729000344_create_filter_param_associations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110729000344_create_filter_param_associations.rb
+END
+20101229231001_create_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101229231001_create_reports.rb
+END
+20110428212805_create_filter_prefs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110428212805_create_filter_prefs.rb
+END
+20110422015231_add_filter_prefs_to_dashboards.rb
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110422015231_add_filter_prefs_to_dashboards.rb
+END
+20101216231920_devise_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101216231920_devise_create_users.rb
+END
+20110607051842_add_filter_enabled_to_filter_prefs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110607051842_add_filter_enabled_to_filter_prefs.rb
+END
+20110331075732_add_highcharts_params_to_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110331075732_add_highcharts_params_to_reports.rb
+END
+20110412235451_add_data_symbols_to_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110412235451_add_data_symbols_to_report_queries.rb
+END
+20110617224908_create_delayed_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110617224908_create_delayed_jobs.rb
+END
+20110428212737_create_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110428212737_create_filter_params.rb
+END
+20110322214815_create_data_segment_job_runners.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110322214815_create_data_segment_job_runners.rb
+END
+20110619075408_add_user_id_to_filter_prefs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110619075408_add_user_id_to_filter_prefs.rb
+END
+20110428073749_devise_invitable_add_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110428073749_devise_invitable_add_to_users.rb
+END
+20110406193744_add_sample_data_to_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110406193744_add_sample_data_to_queries.rb
+END
+20110401231958_add_query_result_id_to_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110401231958_add_query_result_id_to_queries.rb
+END
+20110401231719_create_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110401231719_create_report_queries.rb
+END
+20110715004954_add_dynamic_values_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110715004954_add_dynamic_values_to_filter_params.rb
+END
+20101228202057_create_dashboards.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101228202057_create_dashboards.rb
+END
+20110614101412_add_kpi_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110614101412_add_kpi_to_filter_params.rb
+END
+20101229232555_create_dashboard_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101229232555_create_dashboard_reports.rb
+END
+20110528020138_add_y_axis_to_report_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110528020138_add_y_axis_to_report_queries.rb
+END
+20110323222629_create_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110323222629_create_queries.rb
+END
+20110711214225_create_filter_sets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110711214225_create_filter_sets.rb
+END
+20110407164559_add_name_to_queries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110407164559_add_name_to_queries.rb
+END
+20101221173657_create_permissions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20101221173657_create_permissions.rb
+END
+20110508225542_add_sample_option_to_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110508225542_add_sample_option_to_reports.rb
+END
+20110414204113_add_table_columns_to_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110414204113_add_table_columns_to_reports.rb
+END
+20110706232909_create_report_links.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110706232909_create_report_links.rb
+END
+20110518075811_add_global_admin_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110518075811_add_global_admin_to_users.rb
+END
+20110519094120_add_default_dashboard_id_to_configuration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110519094120_add_default_dashboard_id_to_configuration.rb
+END
+20110407175112_add_layout_to_dashboard_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110407175112_add_layout_to_dashboard_reports.rb
+END
+20110314203329_create_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110314203329_create_configurations.rb
+END
+20110317132925_acts_as_taggable_on_migration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110317132925_acts_as_taggable_on_migration.rb
+END
+20110506233257_add_default_period_to_filter_params.rb
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/db/migrate/20110506233257_add_default_period_to_filter_params.rb
+END

@@ -1,0 +1,13 @@
+<%= simple_form_for @role do |form| %>
+  <div class="dialog-content">
+    <div class="col-1">
+      <%= form.input :name %>
+      <%= form.input :description %>
+    </div>
+    <div class="col-2">
+      <%= form.association :permissions, :as => :check_boxes,
+                           :collection => Permission.find(:all, :order => "ability ASC") %>
+    </div>
+  </div>
+  <%= render :partial => 'shared/dialog_footer', :locals => { :form => form, :cancel_path => roles_path } %>
+<% end %>

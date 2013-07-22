@@ -1,0 +1,6 @@
+<div class="dialog dashboard-report-dialog">
+
+  <h1>Edit <%= @dashboard_report.report.name %></h1>
+  <%= render 'form' %>
+
+</div>

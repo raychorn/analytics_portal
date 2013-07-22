@@ -1,0 +1,17 @@
+<div id="content-main">
+
+<h1>Role</h1>
+
+<p>
+  <b>Name</b>
+  <%= @role.name %>
+</p>
+<p>
+  <b>Permissions</b>
+  <%= @role.permissions_names %>
+</p>
+
+<%= link_to 'Edit', edit_role_path(@role) %> |
+<%= link_to 'Back', roles_path %>
+
+</div>

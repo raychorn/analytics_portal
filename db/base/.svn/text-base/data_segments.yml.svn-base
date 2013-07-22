@@ -1,0 +1,311 @@
+
+--- 
+data_segments: 
+  columns: 
+  - id
+  - name
+  - description
+  - data_source_id
+  - created_at
+  - updated_at
+  - properties
+  - schedule
+  - enable_schedule
+  records: 
+  - - 1
+    - Weekly Usage Trend 1
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-27 23:05:24 Z
+    - ""
+    - ""
+    - false
+  - - 2
+    - Error Scatterplot
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-21 23:09:25 Z
+    - ""
+    - ""
+    - false
+  - - 3
+    - Error Report
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-18 20:23:58 Z
+    - ""
+    - ""
+    - false
+  - - 4
+    - Data by Technology
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-27 21:05:49 Z
+    - "{ \"start_date_month\": \"2010-01\", \"end_date_month\": \"2010-02\"}"
+    - ""
+    - false
+  - - 5
+    - Daily Usage 1
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-27 23:07:42 Z
+    - ""
+    - ""
+    - false
+  - - 6
+    - Licensing Report 1 - New Licenses
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-22 01:04:51 Z
+    - ""
+    - ""
+    - false
+  - - 7
+    - Usage Trend 1
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-06-27 22:56:03 Z
+    - ""
+    - ""
+    - false
+  - - 8
+    - Device Usage Pie Chart
+    - ""
+    - 1
+    - 2011-05-27 00:51:12 Z
+    - 2011-07-15 18:54:06 Z
+    - ""
+    - ""
+    - false
+  - - 9
+    - Weekly Usage Trend 3
+    - ""
+    - 1
+    - 2011-05-27 21:08:36 Z
+    - 2011-06-27 23:05:56 Z
+    - ""
+    - ""
+    - false
+  - - 10
+    - Daily Usage 3
+    - ""
+    - 1
+    - 2011-05-27 22:38:39 Z
+    - 2011-06-27 22:55:05 Z
+    - ""
+    - ""
+    - false
+  - - 11
+    - Technology Performance Report
+    - ""
+    - 1
+    - 2011-05-28 06:41:21 Z
+    - 2011-07-18 20:46:18 Z
+    - ""
+    - ""
+    - false
+  - - 12
+    - Technology Performance Summary
+    - ""
+    - 1
+    - 2011-05-28 21:01:51 Z
+    - 2011-07-18 20:54:22 Z
+    - ""
+    - ""
+    - false
+  - - 13
+    - Device Usage Report
+    - ""
+    - 1
+    - 2011-05-29 01:01:14 Z
+    - 2011-06-29 20:23:55 Z
+    - ""
+    - ""
+    - false
+  - - 14
+    - Device Usage Summary
+    - ""
+    - 1
+    - 2011-05-29 01:05:06 Z
+    - 2011-07-06 23:19:24 Z
+    - ""
+    - ""
+    - false
+  - - 15
+    - Usage Trend 3
+    - ""
+    - 1
+    - 2011-05-29 03:36:01 Z
+    - 2011-06-27 22:57:35 Z
+    - ""
+    - ""
+    - false
+  - - 16
+    - Error Summary
+    - ""
+    - 1
+    - 2011-05-29 06:28:00 Z
+    - 2011-05-29 06:28:00 Z
+    - ""
+    - 
+    - false
+  - - 17
+    - Total Connections Heat Map
+    - ""
+    - 1
+    - 2011-06-07 21:22:33 Z
+    - 2011-06-10 11:51:50 Z
+    - ""
+    - "* * * * *"
+    - false
+  - - 18
+    - KPI - License Data
+    - ""
+    - 1
+    - 2011-06-13 23:06:16 Z
+    - 2011-06-13 23:06:16 Z
+    - ""
+    - ""
+    - false
+  - - 19
+    - Usage Trend 2
+    - ""
+    - 1
+    - 2011-06-20 21:11:05 Z
+    - 2011-06-20 21:11:05 Z
+    - ""
+    - ""
+    - false
+  - - 20
+    - Weekly Usage Trend 2
+    - ""
+    - 1
+    - 2011-06-20 21:14:33 Z
+    - 2011-06-20 21:14:33 Z
+    - ""
+    - ""
+    - false
+  - - 21
+    - Daily Usage 2
+    - ""
+    - 1
+    - 2011-06-20 23:23:12 Z
+    - 2011-06-20 23:23:12 Z
+    - ""
+    - ""
+    - false
+  - - 22
+    - Licensing Report 2 - Returning Licenses
+    - ""
+    - 1
+    - 2011-06-22 08:09:27 Z
+    - 2011-06-22 08:09:27 Z
+    - ""
+    - ""
+    - false
+  - - 23
+    - Licensing Report 3 - Lost Licenses
+    - ""
+    - 1
+    - 2011-06-22 08:17:13 Z
+    - 2011-06-22 08:17:13 Z
+    - ""
+    - ""
+    - false
+  - - 24
+    - KPI - Technology Data - Connects Per Month
+    - ""
+    - 1
+    - 2011-07-06 20:32:49 Z
+    - 2011-07-06 20:36:27 Z
+    - ""
+    - ""
+    - false
+  - - 25
+    - KPI - Technology Data - Connects Per Day
+    - ""
+    - 1
+    - 2011-07-06 20:37:53 Z
+    - 2011-07-06 20:37:53 Z
+    - ""
+    - ""
+    - false
+  - - 26
+    - "Connections per Day Heat Map "
+    - "Connections per Day Heat Map "
+    - 1
+    - 2011-07-06 21:16:11 Z
+    - 2011-07-06 21:16:11 Z
+    - ""
+    - ""
+    - false
+  - - 27
+    - "Total Throughput Heat Map "
+    - "Total Throughput Heat Map "
+    - 1
+    - 2011-07-06 22:28:34 Z
+    - 2011-07-06 22:28:34 Z
+    - ""
+    - ""
+    - false
+  - - 28
+    - Throughput per Day Heat Map
+    - Throughput per Day Heat Map
+    - 1
+    - 2011-07-06 22:44:42 Z
+    - 2011-07-06 22:44:42 Z
+    - ""
+    - ""
+    - false
+  - - 29
+    - Average Signal Strength Heat Map
+    - Average Signal Strength Heat Map
+    - 1
+    - 2011-07-06 22:50:34 Z
+    - 2011-07-06 22:50:34 Z
+    - ""
+    - ""
+    - false
+  - - 30
+    - Average Peak Download Speed Heat Map
+    - Average Peak Download Speed Heat Map
+    - 1
+    - 2011-07-06 22:55:20 Z
+    - 2011-07-06 22:55:20 Z
+    - ""
+    - ""
+    - false
+  - - 31
+    - Error Frequency Heat Map
+    - Error Frequency Heat Map
+    - 1
+    - 2011-07-06 23:00:03 Z
+    - 2011-07-06 23:00:03 Z
+    - ""
+    - ""
+    - false
+  - - 32
+    - Connection Failure Rate Heat Map
+    - Connection Failure Rate Heat Map
+    - 1
+    - 2011-07-06 23:04:15 Z
+    - 2011-07-06 23:04:15 Z
+    - ""
+    - ""
+    - false
+  - - 33
+    - "* Login Data"
+    - ""
+    - 1
+    - 2011-07-21 07:10:16 Z
+    - 2011-07-21 07:14:22 Z
+    - ""
+    - ""
+    - false

@@ -1,0 +1,896 @@
+// Import the non-default scaffolding module to help us get started.
+@import "blueprint/scaffolding";
+
+// This configuration will only apply the
+// blueprint styles to pages with a body class of "bp"
+// This makes it easier to have pages without blueprint styles
+// when you're using a single/combined stylesheet.
+
+body.bp {
+  // @include blueprint-typography(true);
+  @include blueprint-utilities;
+  // @include blueprint-debug;
+  // @include blueprint-interaction;
+}
+
+// Remove the scaffolding when you're ready to start doing visual design.
+// Or leave it in if you're happy with how blueprint looks out-of-the-box
+// @include blueprint-scaffolding("body.bp");
+
+$smith-green: #8DAF17;
+$smith-blue: #21415E;
+$smith-grey: #AEAEAA;
+$smith-med-grey: #E3E3E3;
+$smith-med2-grey: #E7E7E7;
+$smith-light-grey: #F2F2F2;
+$bg-color: #C7C7C7;
+$nav-link-color: white;
+$default-font-color: #1E1E1E;
+$smith-blue-border: #3E6485;
+
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("/images/header/header-bg.jpg") repeat-x scroll 0 0 $bg-color;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  color: $default-font-color;
+}
+
+body.logged-in {
+  background: url("/images/header/header-logged-in-bg.jpg") repeat-x scroll 0 0 $bg-color;
+}
+
+body.bp ul, body.bp ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.debug {
+  li {
+    list-style: none;
+  }
+}
+
+////////////////////////////////////
+// Header
+////////////////////////////////////
+
+#header-bg {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+
+#header {
+  position: relative;
+}
+
+#smithmicro-logo-main {
+  float: left;
+  height: 80px;
+  width: 240px;
+  background: url("/images/logo/SM-Analytics-logo.png") no-repeat scroll center 13px transparent;
+  border-right: 1px solid $smith-blue-border;
+}
+
+////////////////////////////////////
+// Navigation (tab, etc.)
+////////////////////////////////////
+
+#header .root-nav {
+  border-left: 1px solid $smith-blue-border;
+  height: 73px;
+  padding: 7px 0 0 30px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 240px;
+  color: $smith-grey;
+  li {
+    display: inline;
+    font-size:12px;
+    a {
+      color: $smith-green;
+    }
+  }
+  li.customer-name {
+    color: white;
+    display: block;
+    padding: 7px 0;
+  }
+  li.logged-in {
+    color: $smith-grey;
+  }
+}
+
+@mixin tabbed-nav {
+  float: left;
+  .nav-items {
+    padding-left: 0px;
+    li {;
+      float: left;
+      position: relative;
+      height: 43px;
+      list-style: none;
+      a.name, span.name {
+        margin: 0 30px;
+        line-height: 40px;
+        color: $smith-blue;
+      }
+      a.action {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 20px;
+        background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+      }
+      a:hover.action {
+        background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+      }
+    }
+    li.current a.name {
+      color: white;
+    }
+    li.global-admin {
+      border: none;
+      font-size: 16px;
+    }
+  }
+}
+
+.main-nav {
+  @include tabbed-nav;
+  .nav-items {
+    position: relative;
+    top: 40px;
+    li {
+      a.name {
+        color: $smith-grey;
+      }
+      height: 40px;
+      border-right: 1px solid $smith-blue-border;
+    }
+    li.last {
+      border-right: none;
+    }
+    li.current {
+      background: url("/images/header/main-nav-active-arrow.jpg") no-repeat scroll center bottom transparent;
+    }
+  }
+}
+
+.sub-nav {
+  @include tabbed-nav;
+  float: none;
+  font-size: 22px;
+  height: 43px;
+  width: 100%;
+  background-color: transparent;
+  float: none;
+  font-size: 22px;
+  height: 43px;
+  position: relative;
+  width: 100%;
+  li.current {
+    background: url("/images/header/second-menu-active-arrow.png") no-repeat scroll center bottom transparent;
+  }
+}
+
+.sub-nav-2 {
+  @include tabbed-nav;
+  background: url("/images/header/header-bg.jpg") repeat scroll 0 0 transparent;
+  float: none;
+  height: 41px;
+  position: relative;
+  width: 100%;
+  .nav-items {
+    li {
+      height:41px;
+      width:158px;
+      background-color: $smith-grey;
+      border-right: 1px solid #21415E;
+    }
+    li.current {
+      background-color: $smith-light-grey;
+    }
+    li.current a.name,
+    li a.name {
+      color: $smith-blue;
+      display: block;
+      width: 108px;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 30px 0 0;
+      padding-left: 20px;
+      height: 41px;
+      text-align: center;
+    }
+  }
+  li.action-tab {
+    background: transparent;
+    border-right: none;
+    width: auto;
+    a.name {
+      color: $smith-green;
+      padding: 0 0 0 20px;
+      margin-left: 30px;
+      background: url("/images/content/add-icon.png") no-repeat scroll left center transparent;
+      width: auto;
+    }
+  }
+  .title {
+    width: 710px;
+    float: right;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 41px;
+    .name {
+      position: relative;
+    }
+    a.edit-button {
+      background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+      height: 20px;
+      position: absolute;
+      right: -30px;
+      top: 0;
+      width: 20px;
+    }
+    a.print-button {
+      background: url("/images/content/print-icon.png") no-repeat scroll;
+      height: 20px;
+      position: absolute;
+      right: -55px;
+      top: 2px;
+      width: 20px;
+    }
+  }
+}
+
+#content-main.dashboards {
+  .sub-nav-2 {
+    li.action-tab {
+      background: $smith-blue;
+      a.name {
+        margin: 0 30px 0 20px;
+        padding: 0 0 0 15px;
+        width: 108px;
+      }
+    }
+  }
+}
+
+////////////////////////////////////
+// Notice / Alert Messages
+////////////////////////////////////
+
+.notice,
+.alert,
+.no-message {
+  margin: 10px auto;
+	border: 2px solid;
+  border-color: transparent;
+	padding: 15px 30px;
+}
+
+.notice {
+  border-color: black;
+  background-color: $smith-light-grey;
+}
+
+.alert {
+	border-color: #E94E4D;
+  background-color: $smith-light-grey;
+	font-weight: bold;
+}
+
+////////////////////////////////////
+// Content
+////////////////////////////////////
+
+#content {
+  margin-top: 20px;
+}
+
+body.two-col #sidebar {
+  background-color: $smith-med-grey;
+  div.spacer {
+    height: 20px;
+  }
+}
+
+#content-main {
+  background-color: $smith-light-grey;
+}
+
+#content-body {
+  div.spacer {
+    height: 20px;
+  }
+  padding: 18px 15px 15px 15px;
+}
+
+////////////////////////////////////
+// Combo Table
+////////////////////////////////////
+
+table.combo-table {
+  width: 100%;
+  thead {
+    th {
+      border-bottom: 1px solid $smith-grey;
+      color: $default-font-color;
+    }
+    th.actions {
+      padding: 0 15px 0 5px;
+    }
+    a, a:visited {
+      color: $default-font-color;
+    }
+  }
+  tr.odd {
+    background-color: $smith-med2-grey;
+  }
+  th, td, caption {
+    padding: 10px 15px;
+  }
+  th {
+    font-weight:bold;
+  }
+  td.start,
+  td.edit,
+  td.destroy {
+    width: 30px;
+    padding: 0px;
+  }
+  td.show {
+    padding: 0 5px;
+  }
+  td.start a,
+  td.edit a,
+  td.destroy a {
+    height: 30px;
+    width: 30px;
+    display: block;
+  }
+  td.start a {
+    background: url("/images/content/start-icon.png") no-repeat scroll center center transparent;
+  }
+  td.edit a {
+    background: url("/images/content/edit-large-icon.png") no-repeat scroll center center transparent;
+  }
+  td.destroy a {
+    background: url("/images/content/delete-icon.png") no-repeat scroll center center transparent;
+  }
+  a, a:visited {
+    color:#000066;
+  }
+}
+
+.show-object {
+  .value-pair {
+    margin-bottom: 20px;
+    .label {
+      font-weight: bold;
+      margin: 0;
+    }
+    .value {
+      margin: 0;
+    }
+  }
+  .edit-link {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+////////////////////////////////////
+// Search
+////////////////////////////////////
+
+form.search-form {
+  position: absolute;
+  right: 18px;
+  top: 9px;
+  p a.clear-button {
+    color: $nav-link-color;
+  }
+  #search,
+  span.search-left-bg,
+  span.search-icon,
+  .submit-button,
+  .clear-button {
+    display: inline;
+    float: left;
+    height: 23px;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+  }
+  #search {
+    width: 179px;
+    padding-left: 16px;
+    background: url("/images/content/search-bg.png") repeat-x left top white;
+  }
+  span.search-left-bg {
+    width: 12px;
+    background: url("/images/content/search-left-bg.png") no-repeat center center transparent;
+  }
+  span.search-icon {
+    position: absolute;
+    width: 13px;
+    left: 12px;
+    top: 0;
+    background: url("/images/content/search-icon.png") no-repeat center center transparent;
+  }
+  .submit-button {
+    width: 35px;
+    cursor: pointer;
+    left: -3px;
+    top: 1px;
+    color: white;
+    background: url("/images/content/search-go-bg.png") no-repeat center center transparent;
+  }
+  .clear-button {
+    padding-left:5px;
+    width: 23px;
+    background: url("/images/content/clear-icon.png") no-repeat center center transparent;
+  }
+}
+
+#reports_search #search {
+  width: 128px;
+}
+
+body.two-col form.search-form {
+  position: absolute;
+  left: 18px;
+}
+
+////////////////////////////////////
+// Dialogs
+////////////////////////////////////
+
+.dialog {
+  margin: 0 auto;
+  h1 {
+    background-color: $smith-blue;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 14px 0 14px 30px;
+  }
+  background-color: $smith-light-grey;
+  h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .dialog-content {
+    margin: 10px 20px;
+  }
+  label {
+    margin:2px 0;
+    display: block;
+  }
+  label.boolean,
+  label.check_box {
+    display: inline;
+  }
+  label.check_boxes,
+  label.collection_radio,
+  label.collection_check_boxes {
+    display: block;
+    margin: 2px 0 2px 10px;
+  }
+  input.string,
+  textarea,
+  select {
+    display: block;
+  }
+  .filters {
+    float: left;
+  }
+  .col-1,
+  .col-2 {
+    float: left;
+    width: 260px;
+    input.string,
+    textarea {
+      width: 230px;
+    }
+    textarea {
+      height: 100px;
+    }
+  }
+  .col-a {
+    float: left;
+    width: 300px;
+    input.string,
+    textarea {
+      width: 265px;
+    }
+    textarea {
+      height: 100px;
+    }
+  }
+  .col-1 {
+    padding: 15px 0;
+  }
+  .col-2 {
+    padding: 15px 0;
+  }
+  .col-3 {
+    padding-bottom: 15px;
+    .multi-check-boxes {
+      float: left;
+      padding-left: 15px;
+    }
+  }
+  .input {
+    margin: 5px 15px 5px 15px;
+  }
+  .date-input {
+    padding-left:30px;
+    label.string,
+    input.string {
+      width: 185px;
+    }
+  }
+  .sub-check-boxes {
+    background-color: white;
+    margin-left: 30px;
+    width: 190px;
+    height: 120px;
+    overflow: auto;
+  }
+  .dialog-info {
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+  }
+  .footer {
+    border-top: 1px solid black;
+    clear: both;
+    margin: 0 15px;
+    position: relative;
+  }
+  .buttons-wrapper {
+    float: left;
+    position: relative;
+    left: 50%;
+    .buttons {
+      float: left;
+      position: relative;
+      left: -50%;
+      margin: 10px 0;
+    }
+  }
+  .button,
+  .cancel-button,
+  .delete-button {
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid $smith-light-grey;
+    color: white;
+    font-size: 13px;
+  }
+  .delete-button {
+    position: absolute;
+    background: $smith-grey;
+    bottom: 10px;
+    left: 0;
+  }
+  .cancel-button {
+    height: 28px;
+    background: $smith-grey;
+    float: left;
+  }
+  .button {
+    background: $smith-green;
+    float: left;
+  }
+}
+
+.login-dialog,
+.reset-password-dialog {
+  width: 350px;
+  position: relative;
+  .simple_form {
+    padding-top: 15px;
+    .dialog-content {
+      border-top: 1px solid #BDBDBD;
+      padding-top: 10px;
+    }
+    div.email,
+    div.password {
+      margin: 0 5px;
+      input,
+      label {
+        width: 270px;
+        margin: 0 auto;
+        display: block;
+      }
+      label {
+        padding: 2px 0;
+      }
+    }
+    input#user_submit {
+      float: right;
+      margin-right: 22px;
+    }
+    .footer {
+      border-top: 1px solid #BDBDBD;
+      padding: 15px 0;
+      div.options {
+        float: left;
+        margin-left: 22px;
+        div.input {
+          margin: 0;
+        }
+      }
+      a {
+        color: $smith-green;
+      }
+      div.input {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+}
+
+.user-dialog,
+.role-dialog,
+.dashboard-report-dialog,
+.dashboard-dialog,
+.dashboard-select-dialog,
+.configuration-dialog,
+.data-source-dialog,
+.filter-param-dialog,
+.filter-set-dialog {
+  width: 560px;
+}
+
+.dashboard-select-dialog,
+.configuration-dialog {
+  .owner-name {
+    padding-left:20px;
+  }
+  .default {
+    font-weight: bold;
+  }
+  label.collection_radio {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+////////////////////////////////////
+// Simple Forms
+////////////////////////////////////
+
+.simple_form {
+  .error {
+    color: red;
+  }
+  /*.input {*/
+    /*label {*/
+      /*float: left;*/
+      /*width: 150px;*/
+    /*}*/
+    /*label.collection_check_boxes {*/
+      /*display: inline;*/
+      /*float: none;*/
+    /*}*/
+  /*}*/
+}
+
+////////////////////////////////////
+// Custom Forms
+////////////////////////////////////
+
+.global-admin {
+  .sub-form {
+    border-top: 2px solid black;
+  }
+
+  .nested-fields {
+    border-bottom: 1px solid black;
+  }
+
+  border: 2px solid red;
+}
+
+////////////////////////////////////
+// Reports
+////////////////////////////////////
+
+.container ul.reports-list {
+  margin: 10px 0 10px 10px;
+}
+
+.report {
+  position: relative;
+  a.edit-button {
+    /*float: right;*/
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("/images/content/edit-small-sprite2.png") no-repeat scroll left center transparent;
+  }
+  a:hover.edit-button {
+    background: url("/images/content/edit-small-sprite2.png") no-repeat scroll -20px center transparent;
+  }
+}
+
+.report {
+  position: relative;
+  a.print-button {
+    /*float: right;*/
+    display: block;
+    position: fixed;
+    top: 155px;
+    right: 325px;
+    width: 20px;
+    height: 20px;
+    background: url("/images/content/print-icon.png") no-repeat scroll;
+  }
+  a:hover.print-button {
+    background: url("/images/content/print-icon.png") no-repeat scroll;
+  }
+}
+
+.report,
+.large-report {
+  float: left;
+  margin-bottom:15px;
+  width: 100%;
+}
+
+.medium-report {
+  width: 48%;
+}
+
+.small-report {
+  width: 31%;
+  height: 300px;
+}
+
+table.report,
+table.queries {
+  th, td {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+  }
+}
+
+table.queries {
+  th, td {
+    text-align: left;
+  }
+}
+
+// DataTable jquery plugin styles
+table.display {
+  background-color: white;
+  table-layout: fixed;
+  word-wrap: break-word;
+  /*height: 130px;*/
+  caption {
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    color: $smith-blue;
+    padding: 10px 0;
+  }
+  th, td {
+    overflow: hidden;
+  }
+  .trend-graph {
+    height: 40px;
+  }
+  span.alert-bullet {
+    color: red;
+    font-weight: bold;
+  }
+  span.bad {
+    color: red;
+  }
+  span.good {
+    color: green;
+  }
+}
+
+.dataTables_processing {
+  border: none;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 12px;
+  /*height:50px;*/
+  /*left:0;*/
+  margin-top:0;
+  /*padding:0;*/
+  /*position:absolute;*/
+  /*visibility:hidden;*/
+  /*line-height:50px;*/
+  /*vertical-align: middle;*/
+  top: 34px;
+}
+
+table.display-many-columns {
+  font-size: 10px;
+}
+
+////////////////////////////////////
+// Tree View
+////////////////////////////////////
+
+#tree.treeview {
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 447px;
+  span.folder {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #454545;
+    background-color: white;
+    border-top: 1px dotted #9E9E9E;
+    padding-left: 30px;
+  }
+  .hitarea {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    background: url("/images/treeview/arrows.png") no-repeat scroll 1px 1px transparent;
+  }
+  .expandable-hitarea {
+    background: url("/images/treeview/arrows.png") no-repeat scroll -27px 1px transparent;
+  }
+  li {
+    line-height:25px;
+    margin:0;
+    padding:0;
+  }
+  li.file {
+    padding: 0 0 0 35px;
+    background-image: none;
+    background-color: $smith-med-grey;
+    a, span {
+      color: $smith-blue;
+    }
+  }
+  li.active-file {
+    background-color: $smith-blue;
+    a, span {
+      color: $smith-med-grey;
+    }
+    span {
+      float: right;
+      padding-right:15px;
+    }
+  }
+}

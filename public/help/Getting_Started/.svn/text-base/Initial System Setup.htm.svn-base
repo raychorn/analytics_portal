@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1037" MadCap:lastWidth="873" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Getting Started" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="Analytics_portal_help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Initial System Setup</title>
+        <link href="../Resources/Stylesheets/default.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Initial System Setup</h1>
+        <p class="body">The first time you run the <span class="PrimaryCompanyName">Smith Micro</span> <![CDATA[ ]]><span class="PrimaryApplication Name">Analytics Portal</span>, you will need to do initial system setup. The following dialog is displayed at startup:</p>
+        <p class="bodypic">
+            <img src="../Resources/Images/System Setup Dialog.png" />
+        </p>
+        <p class="body">Do the following to complete initial system setup:</p>
+        <table class="AutoNumber_p_Number1" style="border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">1.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="1." valign="top">Enter the Customer Name.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">2.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="2." valign="top">Enter the first name of person that will be the Global Administrator in the Global Admin First Name field.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">3.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="3." valign="top">Enter the last name of person that will be the Global Administrator in the Global Admin Last Name field.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">4.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="4." valign="top">Enter the email address of person that will be the Global Administrator in the Global Admin Email field. The email address you enter here will server as your user ID.</td>
+            </tr>
+        </table>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">5.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="5." valign="top">Enter a password in the Password</td>
+            </tr>
+        </table>
+        <p class="BulletIndent" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Minimum length of at least 8 characters.</p>
+        <p class="BulletIndent" MadCap:autonum="● &#160;"><span class="autonumber"><span>● &#160;</span></span>Must contain at least 1 letter, 1 number, and 1 symbol.</p>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">6.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="6." valign="top">Re-enter the password in the Confirm Password field.</td>
+            </tr>
+        </table>
+        <p class="NoteIndent" style="border-bottom-color: #ffffff;border: none 0px;" MadCap:autonum="&lt;b&gt;Note: &lt;/b&gt;"><span class="autonumber"><span><b>Note: </b></span></span>The values entered in the Pasword and Confirm Password fields must match.</p>
+        <table class="AutoNumber_p_Number1" style="border-bottom-color: #ffffff; border: none 0px; width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 13.872px;" />
+            <col style="width: 30px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_p_Number1" valign="top"><span class="Number_character">7.</span>
+                </td>
+                <td class="AutoNumber_p_Number1" MadCap:autonum="7." valign="top">Click Setup.</td>
+            </tr>
+        </table>
+        <p class="body">Initial system setup is complete. The <a href="../Analytics Portal Interface/Analytic Portal Interface.htm"><span class="PrimaryApplication Name">Analytics Portal</span> Dashboard</a> is displayed.</p>
+        <div>
+            <p class="copyrightfooter" MadCap:conditions="Primary.Online">Copyright © 2011 Smith Micro Software, Inc.</p>
+        </div>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

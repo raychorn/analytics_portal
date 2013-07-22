@@ -1,0 +1,9 @@
+<%= simple_form_for @dashboard_report do |form| %>
+
+  <div class="dialog-content">
+    <%= render :partial => 'filter_prefs/fields_for_dialog', :locals => { :form => form } %>
+  </div>
+
+  <%= render :partial => 'shared/dialog_footer', :locals => {
+          :form => form, :cancel_path => dashboard_path(@dashboard_report.dashboard) } %>
+<% end %>

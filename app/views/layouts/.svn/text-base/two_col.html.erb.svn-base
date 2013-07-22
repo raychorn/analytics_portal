@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analytics</title>
+  <%= render 'layouts/default_css' %>
+  <%= render 'layouts/default_js' %>
+  <%= csrf_meta_tag %>
+  <%= render 'reports/reports_js' %>
+</head>
+<!-- TODO: remove 'bp' class when developing graphics -->
+<body class="two-col bp <%= current_user ? 'logged-in' : '' %>">
+<div class="container">
+
+  <%= render 'shared/header' %>
+
+  <div id="content">
+    <%= yield %>
+  </div>
+
+  <%= render 'shared/footer' %>
+
+</div>
+</body>
+</html>

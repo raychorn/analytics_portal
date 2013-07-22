@@ -1,0 +1,56 @@
+<%- sub_nav_group ||= nil %>
+
+<div class="sub-nav">
+  <%= tabs_tag :builder => ClickableTabsBuilder, :namespace => :sub_nav, :open_tabs => {:class => 'nav-items'} do |tab| %>
+
+    <% if sub_nav_group == :analytics %>
+
+      <% if can? :read, Dashboard %>
+        <%= tab.dashboard 'Dashboard', default_dashboard_path %>
+      <% end %>
+      <%= tab.reports 'Reports', reports_path %>
+      <% if can? :read, FilterSet %>
+        <%= tab.data_segments 'Data Segments', filter_sets_path %>
+      <% end %>
+      <% if can? :read, DataSegment %>
+        <%= tab.jobs 'Jobs', data_segments_path %>
+      <% end %>
+      <% if can? :read, DataSource %>
+        <%= tab.data_sources 'Data Sources', data_sources_path, :class => 'global-admin' %>
+      <% end %>
+      <% if can? :read, FilterParam %>
+        <%= tab.filter_params 'Filter Params', filter_params_path, :class => 'global-admin' %>
+      <% end %>
+
+    <% elsif sub_nav_group == :users %>
+
+      <% if can? :read, User %>
+        <%= tab.users 'Users', users_path %>
+      <% end %>
+
+    <% elsif sub_nav_group == :account %>
+
+      <%= tab.account 'My Account', account_path %>
+
+    <% elsif sub_nav_group == :roles %>
+
+      <% if can? :read, Role %>
+        <%= tab.roles 'Roles', roles_path %>
+      <% end %>
+
+    <% elsif sub_nav_group == :configuration %>
+
+      <% if can? :read, Configuration %>
+        <%= tab.configuration 'Configuration', configuration_path %>
+      <% end %>
+
+    <% elsif sub_nav_group == :help %>
+
+      <%= tab.help 'Help', help_path %>
+
+    <% else %>
+      <!-- -->
+    <% end %>
+  <% end %>
+</div>
+<div class="clear"></div>

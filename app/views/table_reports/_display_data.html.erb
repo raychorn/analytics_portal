@@ -1,0 +1,28 @@
+<%- # required: report  %>
+<%- filter_prefs ||= nil %>
+<%- column_filter_hash ||= nil %>
+<%- filtered_columns = report.filtered_columns(column_filter_hash, filter_prefs) %>
+<%- link_columns = report.link_columns %>
+<%- displayed_columns = filtered_columns + link_columns %>
+
+<div id="report_<%= report.id %>_content" class="report-content">
+
+  <table id="table_report_<%= report.id %>" class="display<%= (displayed_columns.try(:length) > 5) ? ' display-many-columns' : '' %>">
+
+    <caption><%= report.name %></caption>
+
+    <thead>
+      <tr>
+        <% displayed_columns.each do |col_name| %>
+          <th><%= DataParameter.lookup_column_name(col_name) %></th>
+        <% end %>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- load by ajax -->
+    </tbody>
+
+  </table>
+
+</div>

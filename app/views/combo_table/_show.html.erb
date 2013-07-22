@@ -1,0 +1,19 @@
+<%- objects_string = object_sym.to_s.pluralize %>
+<%- objects_sym = objects_string.to_sym %>
+<%- heading ||= object_sym.to_s %>
+<%- object_name ||= object_sym.to_s %>
+
+<div id="content-main" class="show-object">
+<h1 class="page-heading"><%= heading %></h1>
+
+<%= link_to "Edit #{object_name.capitalize}", edit_polymorphic_path(object), :class => 'edit-link' %>
+
+<% columns.each do |col| %>
+  <div class="value-pair">
+    <p class="label"><%= col.to_s.capitalize %></p>
+    <p class="value"><%= object.send(col) %></p>
+  </div>
+<% end %>
+
+<%= link_to 'Back', polymorphic_path(objects_sym) %>
+</div>

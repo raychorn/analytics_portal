@@ -1,0 +1,22 @@
+<div id="content-main">
+  <%= render :partial => 'shared/sub_nav_2', :locals => {
+          :object_sym => :filter_set, :hide_search => true, :action => 'edit'} %>
+
+  <div id="content-body">
+
+    <table class="combo-table">
+      <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>&nbsp;<%= @filter_set.name %></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

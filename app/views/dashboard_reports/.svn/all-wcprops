@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/edit.html.erb
+END
+_filter_pref_fields.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/_filter_pref_fields.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo1/!svn/ver/14318/trunk/smithmicro.com/Analytics/trunk/analytics_portal/app/views/dashboard_reports/_form.html.erb
+END

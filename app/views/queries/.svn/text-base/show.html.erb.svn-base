@@ -1,0 +1,32 @@
+<div id="content-main">
+
+<p>
+  <b>Data segment:</b>
+  <%= @query.data_segment_id %>
+</p>
+
+<p>
+  <b>Query string:</b>
+  <%= @query.query_string %>
+</p>
+
+<p>
+  <b>Store in db:</b>
+  <%= @query.store_in_db %>
+</p>
+
+<p>
+  <b>Query Result ID:</b>
+  <%= @query.query_result_id %>
+</p>
+
+<p>
+  <b>Sample Data:</b>
+  <%= @query.sample_data %>
+</p>
+
+
+<%= link_to 'Edit', edit_query_path(@query) %> |
+<%= link_to 'Back', queries_path %>
+
+</div>

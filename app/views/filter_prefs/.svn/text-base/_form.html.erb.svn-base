@@ -1,0 +1,14 @@
+<%= simple_form_for(@filter_pref) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :filter_param_id %>
+    <%= f.input :optionable_id %>
+    <%= f.input :optionable_type %>
+    <%= f.input :values %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

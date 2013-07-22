@@ -1,0 +1,10 @@
+<div id="dialog">
+
+<h1>Edit <%= object_sym.to_s.humanize.titleize %></h1>
+
+<%= render :partial => 'combo_table/form', :locals => { :object => object, :object_sym => object_sym } %>
+
+<%= link_to 'Show', object %> |
+<%= link_to 'Back', polymorphic_path(object_sym) %>
+
+</div>

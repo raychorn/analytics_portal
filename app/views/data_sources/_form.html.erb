@@ -1,0 +1,11 @@
+<%= simple_form_for @data_source do |form| %>
+  <div class="dialog-content">
+    <div class="col-a global-admin">
+      <%= form.input :name %>
+      <%= form.input :url %>
+      <%= form.input :database_name %>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <%= render :partial => 'shared/dialog_footer', :locals => { :form => form, :cancel_path => configuration_path } %>
+<% end %>

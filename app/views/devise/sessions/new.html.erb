@@ -1,0 +1,23 @@
+<div class="dialog login-dialog">
+
+  <h1>Log In</h1>
+
+  <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |form| %>
+    <div class="dialog-content">
+      <%= form.input :email %>
+      <%= form.input :password %>
+    </div>
+
+    <div class="footer">
+      <div class="options">
+        <% if devise_mapping.rememberable? -%>
+          <%= form.input :remember_me, :as => :boolean %>
+        <% end %>
+        <%= render :partial => "devise/shared/links" %>
+      </div>
+      <%= form.button :submit, :value => 'Log In' %>
+      <div class="clear"></div>
+    </div>
+  <% end %>
+
+</div>

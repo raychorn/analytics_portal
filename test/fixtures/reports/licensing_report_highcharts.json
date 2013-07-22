@@ -1,0 +1,22 @@
+{
+    "chart": {
+        "zoomType": "xy"
+    },
+    "xAxis": {
+        "type": "datetime",
+        "tickInterval": 2592000000
+    },
+    "yAxis": {
+        "title": {
+            "text": "Total Number of Customers"
+        }
+    },
+    "credits": {
+        "enabled": false
+    },
+    "plotOptions": {
+        "column": {
+            "stacking": "normal"
+        }
+    }
+}

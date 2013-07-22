@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dashboard_id: 1
+  report_id: 1
+  added_at: 2010-12-29 15:25:56
+
+two:
+  dashboard_id: 1
+  report_id: 1
+  added_at: 2010-12-29 15:25:56

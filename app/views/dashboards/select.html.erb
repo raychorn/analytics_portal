@@ -1,0 +1,18 @@
+<div class="dialog dashboard-select-dialog">
+
+  <h1>Add New Dashboard</h1>
+
+  <%= simple_form_for @dashboard, :url => new_dashboard_path, :html => { :method => :get } do |form| %>
+    <div class="dialog-content">
+      <%= form.collection_radio :original_id, @readable_dashboards, :first, :last %>
+    </div>
+    <%= render :partial => 'shared/dialog_footer', :locals =>
+            {
+                    :form => form, :cancel_path => (@dashboard.new_record? ?
+                    default_dashboard_path : dashboard_path(@dashboard)), :submit_button_text => 'Create',
+                    :dialog_info => '(copy an existing dashboard)'
+            }
+    %>
+  <% end %>
+
+</div>

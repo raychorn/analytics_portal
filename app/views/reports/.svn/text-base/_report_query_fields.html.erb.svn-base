@@ -1,0 +1,16 @@
+<div class="nested-fields">
+  <%= f.association :query, :as => :select, :collection => Query.stored_in_db %>
+  <%- # TODO use polymorphism for this check... unfortunately the cocoon gem doesn't play nice %>
+  <% if @report.instance_of?(ChartReport) %>
+    <%= f.input :chart_type, :as => :select, :collection => ChartReport::ChartType.options, :include_blank => true %>
+    <%= f.input :chart_params, :input_html => { :rows => 5, :cols => 80 } %>
+    <%= f.input :y_axis, :hint => 'required', :input_html => { :size => 25 } %>
+    <%= f.input :y_column, :hint => 'required' %>
+    <%= f.input :x_column, :hint => 'optional' %>
+    <%= f.input :name_column, :hint => 'optional' %>
+    <%= f.input :radius_column, :hint => 'optional' %>
+  <% end %>
+  <%= f.input :query_select_group, :hint => 'optional' %>
+  <%= f.input :sql_string, :hint => 'optional', :input_html => { :rows => 10, :cols => 80 } %>
+  <%= link_to_remove_association "unlink query data", f %>
+</div>

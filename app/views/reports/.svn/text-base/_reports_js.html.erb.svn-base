@@ -1,0 +1,88 @@
+<%- dashboard ||= nil %>
+
+<% if @displayed_reports.present? %>
+    <% @displayed_reports.each do |report| %>
+        <% if report.instance_of? HeatMapReport %>
+            <style type="text/css">
+                #map_canvas { height: 100% }
+            </style>
+            <script language="Javascript" type="text/javascript">
+                var __map__;
+                var _model = {};
+
+                var const_function_symbol = 'function';
+
+                var const_object_symbol = 'object';
+                var const_string_symbol = 'string';
+
+                var __infowindow__;
+
+                var __defaultLatLng__;
+
+                var __is_loaded_heat_map_utils__ = false;
+
+                var __callback_heat_map_utils__ = function () {
+                    __is_loaded_heat_map_utils__ = true;
+                };
+
+                function loadScripts() {
+                    var script2 = document.createElement("script");
+                    script2.type = "text/javascript";
+                    script2.src = "/javascripts/heat-map-utils.js";
+                    document.body.appendChild(script2);
+                }
+
+                function initialize() {
+                    loadScripts();
+                    var __defaultLatLng__ = new google.maps.LatLng(37.331789, -122.029620);
+                    var myOptions = {
+                        zoom: 8,
+                        maxZoom: 15,
+                        minZoom: 8,
+                        streetViewControl: false,
+                        center: __defaultLatLng__,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+                    var ele = $("#content-body > div:first");
+                    var h = ele.height();
+                    if (h == 0) {
+                        h = ele.css('height');
+                    }
+                    var w = ele.width();
+                    $('#map_canvas').css('width',w).css('height',400);
+                    __map__ = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                }
+
+                $(window).load(function () {
+                    var script1 = document.createElement("script");
+                    script1.type = "text/javascript";
+                    script1.src = "http://maps.google.com/maps/api/js?v=3.4&libraries=geometry&sensor=false&callback=initialize";
+                    document.body.appendChild(script1);
+                });
+            </script>
+        <% end %>
+    <% end %>
+<% end %>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        <% if @displayed_reports.present? %>
+            <% @displayed_reports.each do |report| %>
+
+            <% if report.instance_of? ChartReport %>
+                <%- # funny syntax below as a single statement is due to a rubymine bug %>
+                smap.initChartReport(<%= "#{dashboard.nil? ? 'null' : dashboard.id},
+                    #{report.id}, #{report.highcharts_params_to_render.to_json},
+                    #{report.tooltip_formatter}".html_safe %>);
+                <% elsif report.instance_of? TableReport %>
+                    smap.initTableReport(<%= "#{dashboard.nil? ? 'null' : dashboard.id}, #{report.id}" %>);
+                <% elsif report.instance_of? KpiReport %>
+                    smap.initKpiReport(<%= "#{dashboard.nil? ? 'null' : dashboard.id}, #{report.id}" %>);
+                <% elsif report.instance_of? HeatMapReport %>
+                    // +++
+                <% end %>
+
+            <% end %>
+        <% end %>
+    });
+</script>

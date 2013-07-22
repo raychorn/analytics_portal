@@ -1,0 +1,39 @@
+<%= simple_form_for @dashboard do |form| %>
+
+  <div class="col-1">
+    <%= form.input :original_id, :as => :hidden %>
+    <%= form.input :name %>
+    <%= form.association :filter_set, :as => :select, :collection => FilterSet.all, :label => "Data Segment" %>
+    <div class="input">
+      <%= form.label :move_to_position, "Tab Order" %>
+      <%= form.collection_select :move_to_position, @dashboard.owner.dashboard_positions_collection, :first, :last %>
+    </div>
+    <%- # form.association :subscribers, :as => :check_boxes, :collection => User.all %>
+    <%- # form.input :filter_prefs, :hint => 'JSON' %>
+    <%- # TODO check that there's no id conflict %>
+  </div>
+
+  <div class="col-2">
+    <%= form.input :shared, :label => "Share this dashboard" %>
+  </div>
+  <div class="clear"></div>
+
+  <% if is_global_admin?(current_user) %>
+    <div class="col-4 global-admin">
+      <%= form.association :owner, :as => :select, :collection => User.all %>
+      <div id="dashboard_reports" class="sub-form">
+        <h3>Reports</h3>
+        <%= form.simple_fields_for :dashboard_reports do |dashboard_report| %>
+          <%= render 'dashboard_report_fields', :f => dashboard_report %>
+        <% end %>
+        <div class="links">
+          <%= link_to_add_association 'link report', form, :dashboard_reports %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <%= render :partial => 'shared/dialog_footer', :locals => {
+          :form => form, :cancel_path => (@dashboard.new_record? ?
+                  default_dashboard_path : dashboard_path(@dashboard)), :obj => @dashboard} %>
+<% end %>

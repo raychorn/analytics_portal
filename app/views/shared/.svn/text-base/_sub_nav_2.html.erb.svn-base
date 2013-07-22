@@ -1,0 +1,50 @@
+<%- objects ||= [] %>
+<%- object ||= nil %>
+<%- object_sym ||= nil %>
+<%- object_klass ||= (object_sym.present? ? object_sym.to_s.camelize.constantize : nil) %>
+<%- objects_sym ||= object_sym.to_s.pluralize %>
+<%- klass_display_name ||= object_sym.to_s.humanize.titleize %>
+<%- hide_search ||= false %>
+<%- hide_action ||= false %>
+<%- search_on_left ||= false %>
+<%- show_title ||= false %>
+<%- action ||= 'new' %>
+
+<div class="sub-nav-2 <%= search_on_left ? 'search-left' : '' %>">
+
+  <% if objects.present? || !hide_action %>
+    <%= tabs_tag :builder => ActionTabsBuilder, :namespace => :sub_nav_2,
+                 :open_tabs => { :class => 'nav-items' } do |tab| %>
+
+      <% if object.present? && objects.present? %>
+        <% objects.each do |current_object| %>
+          <%= tab.send("#{object_sym.to_s}_#{current_object.id}".to_sym, current_object.name,
+                       polymorphic_path(current_object), edit_polymorphic_path(current_object)) %>
+        <% end %>
+      <% end %>
+
+      <% if !hide_action && (can? action.to_sym, object_klass) %>
+        <%= tab.send("#{action}_#{object_sym.to_s}".to_sym, "#{action.capitalize} #{klass_display_name}",
+                     send("#{action}_polymorphic_path", object_sym), nil, :class => "action-tab") %>
+      <% end %>
+
+    <% end %>
+  <% end %>
+
+  <% if !hide_search %>
+    <%= render :partial => 'shared/search', :locals => { :objects_sym => objects_sym } %>
+  <% end %>
+
+  <% if show_title && object.present? %>
+    <div class="title">
+      <span class="name">
+        <%= object.name %><%= link_to "&nbsp;".html_safe, edit_polymorphic_path(object), :class => "edit-button" %>
+      </span>
+      <span class="name">
+        <a class="print-button" href="printPage" onclick="smap.initPrintButton(); return false;"></a>
+      </span>
+    </div>
+  <% end %>
+
+</div>
+<div class="clear"></div>

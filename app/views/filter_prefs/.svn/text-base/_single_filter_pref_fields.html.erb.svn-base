@@ -1,0 +1,65 @@
+<div class="nested-fields">
+
+  <%= f.input :filter_param_association_id, :as => :hidden %>
+
+  <% if f.object.filter_param.is_a? DateFilterParam %>
+
+    <div class="date-fields">
+      <div class="input radio_select">
+        <%= f.collection_radio :period, f.object.filter_param.options_for_period, :first, :last %>
+      </div>
+
+      <%= f.input :start_date, :as => :string,
+                  :wrapper_html => {:class => 'date-input'},
+                  :input_html => {:disabled => f.object.period_selected?} %>
+      <%= f.input :end_date, :as => :string,
+                  :wrapper_html => {:class => 'date-input'},
+                  :input_html => {:disabled => f.object.period_selected?} %>
+    </div>
+
+  <% elsif f.object.filter_param.is_a? SelectFilterParam %>
+
+    <div class="input select">
+      <%= f.label 'connection_type', 'Connection Type' %>
+      <%= f.collection_select :selected, f.object.filter_param.options_for_connection_type, :first, :last %>
+    </div>
+
+  <% elsif f.object.filter_param.is_a? CheckBoxesFilterParam %>
+
+    <div class="multi-check-boxes">
+      <%- input_class = "dashboard_report_filter_prefs_attributes_#{f.object.id}_values" %>
+      <%= f.input :filter_enabled, :as => :boolean,
+                  :label => DataParameter.lookup_column_name(
+                                          f.object.filter_param.column),
+                  :input_html => {
+                          :class => 'parent-check-box'
+                  }
+      %>
+      <div class="sub-check-boxes">
+        <%= f.simple_fields_for :values do |values_form| %>
+          <% f.object.filter_param.options_for_check_boxes.each do |option| %>
+            <%= values_form.input option, :as => :boolean,
+                                  :label => DataParameter.lookup_display_value(
+                                          f.object.filter_param.column, option),
+                                  :input_html => {
+                                          :id => "#{input_class}_#{option.parameterize.underscore}",
+                                          :checked => (f.object.values.try(:fetch, option, nil) == '1' ? 'checked' : nil),
+                                          :disabled => !f.object.filter_enabled
+                                  } %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+  <% elsif f.object.filter_param.is_a? MapFilterParam %>
+
+    <div class="map-fields">
+      <%= f.input :lat %>
+      <%= f.input :lng %>
+      <%= f.input :zoom %>
+    </div>
+
+  <% end %>
+
+</div>
+
